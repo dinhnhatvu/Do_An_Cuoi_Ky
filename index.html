@@ -1,0 +1,500 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shop</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@4.7.0/fonts/remixicon.css" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="assets/css/base.css">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+
+  <!-- TOPBAR -->
+  <header class="header">
+    <div class="topbar">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <div class="topbar-bar-container">
+              <a href="index.html">
+                <img src="assets/img/logo.png" alt="logo" class="navbar-logo">
+              </a>
+
+              <form action="" class="navbar-form">
+                <select name="" class="navbar-select" id="navbar-select">
+                  <option value="all" selected>All Categories</option>
+                  <option value="fashion">Fashion</option>
+                  <option value="electronics">Electronics</option>
+                </select>
+                <input type="text" placeholder="Search..." class="navbar-input">
+
+                <button type="submit" class="navbar-search">
+                  <i class="ri-search-line"></i>
+                </button>
+              </form>
+
+              <div class="navbar-buttons">
+                <a href="acount.html" class="navbar-button">
+                  <i class="ri-user-line"></i>
+                </a>
+
+                <a href="#" class="navbar-button">
+                  <i class="ri-heart-line"></i>
+                </a>
+
+                <a href="#" class="navbar-button">
+                  <i class="ri-shopping-cart-line"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-12">
+            <nav class="navbar-container">
+              <ul class="navbar-list">
+                <li class="navbar-item">
+                  <a href="index.html" class="navbar-link">HOME</a>
+                </li>
+
+                <li class="navbar-item">
+                  <a href="index.html" class="navbar-link">SHOP</a>
+                </li>
+
+                <li class="navbar-item">
+                  <a href="index.html" class="navbar-link">ACCOUNT</a>
+                </li>
+
+                <li class="navbar-item">
+                  <a href="index.html" class="navbar-link">CONTACT</a>
+                </li>
+              </ul>
+
+              <div class="navbar-contact">
+                <img src="assets/img/call.svg" alt="" class="navbar-icon">
+                <span>099 887 889</span>
+              </div>
+            </nav>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    </div>
+  </header>
+  <!-- END TOPBAR -->
+
+  <!-- HOME -->
+  <main class="main">
+    <section class="home">
+      <div class="swiper home-swiper">
+        <div class="swiper-wrapper">
+          <!-- SLIDE 1 -->
+          <div class="swiper-slide" style="background: url(assets/img/home-img-1.jpg) center/cover no-repeat;">
+            <div class="container">
+              <div class="home-tag">
+                <img src="assets/img/bolt.svg" alt="bolt" class="home-img"> Top Trending
+              </div>
+
+              <h1 class="home-title">Lorem ipsum dolor sit amet.</h1>
+
+              <p class="home-desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est, ab. Facere laboriosam
+                sunt reprehenderit asperiores ut culpa voluptatem eum necessitatibus.</p>
+
+              <a href="" class="button">Shop Now</a>
+            </div>
+          </div>
+          <!-- SLIDE 2 -->
+          <div class="swiper-slide" style="background: url(assets/img/home-img-2.jpg) center/cover no-repeat;">
+            <div class="container">
+              <div class="home-tag">
+                <img src="assets/img/bolt.svg" alt="bolt" class="home-img"> Top Trending
+              </div>
+
+              <h1 class="home-title">Lorem ipsum dolor sit amet.</h1>
+
+              <p class="home-desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est, ab. Facere laboriosam
+                sunt reprehenderit asperiores ut culpa voluptatem eum necessitatibus.</p>
+
+              <a href="" class="button">Shop Now</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="swiper-pagination"></div>
+      </div>
+    </section>
+  </main>
+  <!-- END HOME -->
+
+  <!-- PRODUCTS -->
+  <section class="product container">
+    <div class="inner-title">
+      <h5 class="product-sub-title">CHECK OUT PRODUCT OF THE DAY</h5>
+      <h1 class="product-title">Elevate your lifestyle</h1>
+      <div class="line"></div>
+    </div>
+
+    <div class="swiper product-swiper">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide product-card">
+          <div class="product-header">
+            <img src="assets/img/product-1.jpg" alt="" class="product-img">
+
+            <div class="product-content">
+              <div class="product-top">
+                <ul class="product-stars">
+                  <li><i class="ri-star-fill"></i></li>
+                  <li><i class="ri-star-fill"></i></li>
+                  <li><i class="ri-star-fill"></i></li>
+                  <li><i class="ri-star-fill"></i></li>
+                  <li><i class="ri-star-fill"></i></li>
+
+                  <li class="product-rating">5.0</li>
+                </ul>
+              </div>
+
+              <div class="product-size">
+                <div>
+                  <input type="radio" name="size" class="product-size-input" id="xs" cheked>
+                  <label for="xs" class="product-size-label">xs</label>
+                </div>
+
+                <div>
+                  <input type="radio" name="size" class="product-size-input" id="s">
+                  <label for="s" class="product-size-label">s</label>
+                </div>
+
+                <div>
+                  <input type="radio" name="size" class="product-size-input" id="m">
+                  <label for="m" class="product-size-label">m</label>
+                </div>
+
+                <div>
+                  <input type="radio" name="size" class="product-size-input" id="l">
+                  <label for="l" class="product-size-label">l</label>
+                </div>
+
+                <div>
+                  <input type="radio" name="size" class="product-size-input" id="xl">
+                  <label for="xl" class="product-size-label">xl</label>
+                </div>
+              </div>
+
+              <a href="details.html" class="button product-button">Add to Cart</a>
+            </div>
+          </div>
+          <div class="product-bottom">
+            <div>
+              <h3 class="product-title">
+                <a href="details.html">Lorem ipsum dolor sit amet.</a>
+              </h3>
+
+              <span class="product-price">$145.00</span>
+            </div>
+            <a href="#" class="product-wishlist">
+              <i class="ri-heart-line"></i>
+            </a>
+          </div>
+        </div>
+
+        <div class="swiper-slide product-card">
+          <div class="product-header">
+            <img src="assets/img/product-2.jpg" alt="" class="product-img">
+
+            <div class="product-content">
+              <div class="product-top">
+                <ul class="product-stars">
+                  <li><i class="ri-star-fill"></i></li>
+                  <li><i class="ri-star-fill"></i></li>
+                  <li><i class="ri-star-fill"></i></li>
+                  <li><i class="ri-star-fill"></i></li>
+                  <li><i class="ri-star-fill"></i></li>
+
+                  <li class="product-rating">5.0</li>
+                </ul>
+              </div>
+
+              <div class="product-size">
+                <div>
+                  <input type="radio" name="size" class="product-size-input" id="xs" cheked>
+                  <label for="xs" class="product-size-label">xs</label>
+                </div>
+
+                <div>
+                  <input type="radio" name="size" class="product-size-input" id="s">
+                  <label for="s" class="product-size-label">s</label>
+                </div>
+
+                <div>
+                  <input type="radio" name="size" class="product-size-input" id="m">
+                  <label for="m" class="product-size-label">m</label>
+                </div>
+
+                <div>
+                  <input type="radio" name="size" class="product-size-input" id="l">
+                  <label for="l" class="product-size-label">l</label>
+                </div>
+
+                <div>
+                  <input type="radio" name="size" class="product-size-input" id="xl">
+                  <label for="xl" class="product-size-label">xl</label>
+                </div>
+              </div>
+
+              <a href="details.html" class="button product-button">Add to Cart</a>
+            </div>
+          </div>
+          <div class="product-bottom">
+            <div>
+              <h3 class="product-title">
+                <a href="details.html">Lorem ipsum dolor sit amet.</a>
+              </h3>
+
+              <span class="product-price">$145.00</span>
+            </div>
+            <a href="#" class="product-wishlist">
+              <i class="ri-heart-line"></i>
+            </a>
+          </div>
+        </div>
+
+        <div class="swiper-slide product-card">
+          <div class="product-header">
+            <img src="assets/img/product-3.png" alt="" class="product-img">
+
+            <div class="product-content">
+              <div class="product-top">
+                <ul class="product-stars">
+                  <li><i class="ri-star-fill"></i></li>
+                  <li><i class="ri-star-fill"></i></li>
+                  <li><i class="ri-star-fill"></i></li>
+                  <li><i class="ri-star-fill"></i></li>
+                  <li><i class="ri-star-fill"></i></li>
+
+                  <li class="product-rating">5.0</li>
+                </ul>
+              </div>
+
+              <div class="product-size">
+                <div>
+                  <input type="radio" name="size" class="product-size-input" id="xs" cheked>
+                  <label for="xs" class="product-size-label">xs</label>
+                </div>
+
+                <div>
+                  <input type="radio" name="size" class="product-size-input" id="s">
+                  <label for="s" class="product-size-label">s</label>
+                </div>
+
+                <div>
+                  <input type="radio" name="size" class="product-size-input" id="m">
+                  <label for="m" class="product-size-label">m</label>
+                </div>
+
+                <div>
+                  <input type="radio" name="size" class="product-size-input" id="l">
+                  <label for="l" class="product-size-label">l</label>
+                </div>
+
+                <div>
+                  <input type="radio" name="size" class="product-size-input" id="xl">
+                  <label for="xl" class="product-size-label">xl</label>
+                </div>
+              </div>
+
+              <a href="details.html" class="button product-button">Add to Cart</a>
+            </div>
+          </div>
+
+          <div class="product-bottom">
+            <div>
+              <h3 class="product-title">
+                <a href="details.html">Lorem ipsum dolor sit amet.</a>
+              </h3>
+
+              <span class="product-price">$145.00</span>
+            </div>
+            <a href="#" class="product-wishlist">
+              <i class="ri-heart-line"></i>
+            </a>
+          </div>
+        </div>
+
+        <div class="swiper-slide product-card">
+          <div class="product-header">
+            <img src="assets/img/product-4.jpg" alt="" class="product-img">
+
+            <div class="product-content">
+              <div class="product-top">
+                <ul class="product-stars">
+                  <li><i class="ri-star-fill"></i></li>
+                  <li><i class="ri-star-fill"></i></li>
+                  <li><i class="ri-star-fill"></i></li>
+                  <li><i class="ri-star-fill"></i></li>
+                  <li><i class="ri-star-fill"></i></li>
+
+                  <li class="product-rating">5.0</li>
+                </ul>
+              </div>
+
+              <div class="product-size">
+                <div>
+                  <input type="radio" name="size" class="product-size-input" id="xs" cheked>
+                  <label for="xs" class="product-size-label">xs</label>
+                </div>
+
+                <div>
+                  <input type="radio" name="size" class="product-size-input" id="s">
+                  <label for="s" class="product-size-label">s</label>
+                </div>
+
+                <div>
+                  <input type="radio" name="size" class="product-size-input" id="m">
+                  <label for="m" class="product-size-label">m</label>
+                </div>
+
+                <div>
+                  <input type="radio" name="size" class="product-size-input" id="l">
+                  <label for="l" class="product-size-label">l</label>
+                </div>
+
+                <div>
+                  <input type="radio" name="size" class="product-size-input" id="xl">
+                  <label for="xl" class="product-size-label">xl</label>
+                </div>
+              </div>
+
+              <a href="details.html" class="button product-button">Add to Cart</a>
+            </div>
+          </div>
+
+          <div class="product-bottom">
+            <div>
+              <h3 class="product-title">
+                <a href="details.html">Lorem ipsum dolor sit amet.</a>
+              </h3>
+
+              <span class="product-price">$145.00</span>
+            </div>
+            <a href="#" class="product-wishlist">
+              <i class="ri-heart-line"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- END PRODUCTS -->
+
+  <!-- CATEGORIES -->
+   <section class="categories container">
+    <h5 class="categories-subtitle">Lorem ipsum dolor sit amet.</h5>
+    <div class="categories-header">
+      <h1 class="categories-title">Lorem ipsum dolor sit amet.</h1>
+      
+      <a href="shop.html" class="button categories-button">View all categories</a>
+    </div>
+
+    <div class="categories-list">
+      <div class="categories-list-left">
+        <div class="catetories-left-title">
+          <h2 class="categories-title">ALL PRODUCT</h2>
+          <p class="categories-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus sunt quis dolorum aliquid corporis ex.</p>
+        </div>
+        
+        <div class="categories-buttons">
+          <a href="shop.html" class="categories-link">New Arrivals<i class="ri-arrow-right-line"></i></a>
+          <a href="shop.html" class="categories-link">Treding Items<i class="ri-arrow-right-line"></i></a>
+          <a href="shop.html" class="categories-link">Brand Collection<i class="ri-arrow-right-line"></i></a>
+        </div>
+      </div>
+      <div class="categories-list-right">
+        <div class="categories-top-right">
+          <h2 class="categories-title">ALL PRODUCT</h2>
+          <p class="categories-desc">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus sunt quis dolorum aliquid corporis ex.
+          </p>
+        </div>
+        <div class="categories-bottom-right">
+          <div class="bottom-left">
+            <a href="shop.html" class="categories-link">Women Pants</a>
+          </div>
+          <div class="bottom-right">
+            <a href="shop.html" class="categories-link">Accessories</a>
+          </div>
+        </div>
+      </div>
+    </div>
+   </section>
+  <!-- END CATEGORIES -->
+
+  <!-- FEATURE -->
+   <section class="features">
+    <div class="container">
+      <div class="row">
+        <div class="col-3">
+          <div class="features-item">
+            <img src="assets/img/features-img-1.svg" alt="" class="features-img">
+
+            <div class="features-data">
+              <h3 class="features-title">Certified</h3>
+              <p>Lorem ipsum dolor sit amet.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-3">
+          <div class="features-item">
+            <img src="assets/img/features-img-2.svg" alt="" class="features-img">
+
+            <div class="features-data">
+              <h3 class="features-title">Certified</h3>
+              <p>Lorem ipsum dolor sit amet.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-3">
+          <div class="features-item">
+            <img src="assets/img/features-img-3.svg" alt="" class="features-img">
+
+            <div class="features-data">
+              <h3 class="features-title">Certified</h3>
+              <p>Lorem ipsum dolor sit amet.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-3">
+          <div class="features-item">
+            <img src="assets/img/features-img-4.svg" alt="" class="features-img">
+
+            <div class="features-data">
+              <h3 class="features-title">Certified</h3>
+              <p>Lorem ipsum dolor sit amet.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+   </section>
+
+  <!-- END FEATURE -->
+
+
+  <!-- Swiper -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+  <!-- MAIN JS -->
+  <script src="assets/js/script.js"></script>
+  <!-- Home js -->
+  <script src="assets/js/home.js"></script>
+</body>
+
+</html>
