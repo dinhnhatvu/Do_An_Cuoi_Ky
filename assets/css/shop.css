@@ -1,0 +1,26 @@
+/* BANNER */
+.banner .link {
+    margin-top: 60px;
+    padding: 10px 100px;
+    background: #FFF;
+    border-radius: 40px;
+}
+/* END BANNER */
+
+/* PRODUCTS */
+.filter {
+    padding: 100px 0 0 0;
+}
+
+.filter .filter-button {
+    background: var(--gray-color);
+    color: black;
+    margin-right: 20px;
+}
+
+.filter .filter-results {
+    font-size: 14px;
+    font-weight: 700;
+}
+
+/* END PRODUCTS */

@@ -1,0 +1,13 @@
+body {
+    background: #42a1c6;
+}
+
+.fish {
+    width: 150px;
+    height: 100px;
+    animation: swim 3s infinite;
+}
+
+.fish_body {
+    
+}

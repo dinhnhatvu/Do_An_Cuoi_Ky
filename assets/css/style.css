@@ -12,19 +12,6 @@
 
     /* FONT */
     --font-1: "Azeret Mono", monospace;
-    --font-2: "Instrument Sans", sans-serif;
-    
-    /* FONT SIZE */
-    --big-font-size: 64px;
-    --h1-font-size: 48px; 
-    --h2-font-size: 40px;
-    --h3-font-size: 28px;
-    --h4-font-size: 24px;
-    --largest-font-size: 22px;
-    --larger-font-size: 20px;
-    --large-font-size: 18px;
-    --normal-font-size: 16px;
-    --small-font-size: 14px;
 }
 
 /* NAVBAR */
@@ -33,7 +20,6 @@
 }
 
 .topbar {
-    /* background: gray; */
     padding-top: 20px;
 }
 
@@ -192,6 +178,7 @@
 .product .product-header {
     border: 1px solid var(--border-color);
     position: relative;
+    overflow: hidden;
 }
 
 .product .product-img, .product-content {
@@ -204,20 +191,26 @@
     bottom: 0;
     background: var(--container-color);
     padding: 24px;
+    transform: translateY(130px);
+    transition: transform 0.3s ease;
 }
 
-.product .product-stars {
+.product-card:hover .product-content {
+    transform: translateY(0);
+}
+
+.product-stars {
     display: flex;
     align-items: center;
     column-gap: 4px;
 }
 
-.product .product-size {
+.product-size {
     display: flex;
     margin: 15px 0;
 }
 
-.product .product-size-label {
+.product-size-label {
     width: 42px;
     height: 23px;
     border: 1px solid var(--border-color);
@@ -228,7 +221,7 @@
     border-radius: 30px;
 }
 
-.product .product-size-input {
+.product-size-input {
     display: none;
 }
 
@@ -255,7 +248,7 @@
     color: var(--first-color);
 }
 
-.product .product-price {
+.product-price {
     color: var(--first-color);
     font-size: 22px;
 }
@@ -422,8 +415,69 @@
 }
 
 .features .features-item {
-    display: flex;
-    align-items: center;
-    gap: 10px;
+    margin-bottom: 40px;
 }
 /* END FEATURES */
+
+/* NEWSLETTER */
+.newsletter {
+    background: var(--gray-color);
+}
+
+.newsletter .newsletter-group {
+    margin-bottom: 50px;
+}
+.newsletter .newsletter-form{
+    background: #FFF;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    border-radius: 30px;
+    margin-bottom: 20px;
+}
+/* END NEWSLETTER */
+
+/* FOOTER */
+.footer {
+    background: #201E1D;
+    padding: 100px 0;
+    color: #FFF;
+}
+
+.footer .socials {
+    color: #FFF;
+    font-size: 30px;
+}
+
+.footer h3 {
+    color: white;
+}
+/* END FOOTER */
+.center-center-1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.center-center-2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* DETAILS */
+.details {
+    padding: 100px 0;
+}
+
+.details img {
+    object-fit: cover;
+}
+
+.details i {
+    color: #29AC98;
+}
+
+/* END DETAILS */
