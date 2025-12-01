@@ -14,7 +14,7 @@
 </head>
 
 <body>
-  <header class="header">
+  <header class="header header-fixed">
     <div class="topbar">
       <div class="container">
         <div class="row">
@@ -23,19 +23,6 @@
               <a href="index.html">
                 <img src="assets/img/logo.png" alt="logo" class="navbar-logo">
               </a>
-
-              <form action="" class="navbar-form">
-                <select name="" class="navbar-select" id="navbar-select">
-                  <option value="all" selected>All Categories</option>
-                  <option value="fashion">Fashion</option>
-                  <option value="electronics">Electronics</option>
-                </select>
-                <input type="text" placeholder="Search..." class="navbar-input">
-
-                <button type="submit" class="navbar-search">
-                  <i class="ri-search-line"></i>
-                </button>
-              </form>
 
               <div class="navbar-buttons">
                 <a href="acount.html" class="navbar-button">
@@ -46,7 +33,7 @@
                   <i class="ri-heart-line"></i>
                 </a>
 
-                <a href="#" class="navbar-button">
+                <a href="cart.html" class="navbar-button">
                   <i class="ri-shopping-cart-line"></i>
                 </a>
               </div>
@@ -63,7 +50,7 @@
                 </li>
 
                 <li class="navbar-item">
-                  <a href="index.html" class="navbar-link">SHOP</a>
+                  <a href="shop.html" class="navbar-link">SHOP</a>
                 </li>
 
                 <li class="navbar-item">
@@ -72,6 +59,10 @@
 
                 <li class="navbar-item">
                   <a href="index.html" class="navbar-link">CONTACT</a>
+                </li>
+
+                <li class="navbar-item">
+                  <a href="fish_tank.html" class="navbar-link">Hồ cá</a>
                 </li>
               </ul>
 
@@ -84,8 +75,6 @@
         </div>
       </div>
     </div>
-
-
     </div>
   </header>
 
@@ -144,10 +133,187 @@
 
   <section class="product">
     <div class="container">
+      <div class="row mb-5">
+        <div class="col-lg-4 col-6 product-card">
+          <div class="product-header">
+            <img src="assets/images/sanpham-1.jpeg" alt="" class="product-img">
+
+            <div class="product-content">
+              <div class="product-top">
+                <ul class="product-stars">
+                  <li><i class="ri-star-fill"></i></li>
+                  <li><i class="ri-star-fill"></i></li>
+                  <li><i class="ri-star-fill"></i></li>
+                  <li><i class="ri-star-fill"></i></li>
+                  <li><i class="ri-star-fill"></i></li>
+                  <li class="product-rating">5.0</li>
+                </ul>
+              </div>
+
+              <div class="product-size">
+                <div>
+                  <input type="radio" name="size-p1" class="product-size-input" id="xs-p1" checked>
+                  <label for="xs-p1" class="product-size-label">xs</label>
+                </div>
+                <div>
+                  <input type="radio" name="size-p1" class="product-size-input" id="s-p1">
+                  <label for="s-p1" class="product-size-label">s</label>
+                </div>
+                <div>
+                  <input type="radio" name="size-p1" class="product-size-input" id="m-p1">
+                  <label for="m-p1" class="product-size-label">m</label>
+                </div>
+                <div>
+                  <input type="radio" name="size-p1" class="product-size-input" id="l-p1">
+                  <label for="l-p1" class="product-size-label">l</label>
+                </div>
+                <div>
+                  <input type="radio" name="size-p1" class="product-size-input" id="xl-p1">
+                  <label for="xl-p1" class="product-size-label">xl</label>
+                </div>
+              </div>
+
+              <button class="button product-button w-100"
+                onclick="addToCart(1, 'Váy yếm cổ bèo', 400000, 'assets/images/sanpham-1.jpeg')">
+                Add to Cart
+              </button>
+            </div>
+          </div>
+          <div class="product-bottom">
+            <div>
+              <h3 class="product-title">
+                <a href="details.html">Váy yếm cổ bèo</a>
+              </h3>
+              <span class="product-price">400.000 vnđ</span>
+            </div>
+            <a href="#" class="product-wishlist">
+              <i class="ri-heart-line"></i>
+            </a>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-6 product-card">
+          <div class="product-header">
+            <img src="assets/images/sanpham-2.jpeg" alt="" class="product-img">
+
+            <div class="product-content">
+              <div class="product-top">
+                <ul class="product-stars">
+                  <li><i class="ri-star-fill"></i></li>
+                  <li><i class="ri-star-fill"></i></li>
+                  <li><i class="ri-star-fill"></i></li>
+                  <li><i class="ri-star-fill"></i></li>
+                  <li><i class="ri-star-fill"></i></li>
+                  <li class="product-rating">5.0</li>
+                </ul>
+              </div>
+
+              <div class="product-size">
+                <div>
+                  <input type="radio" name="size-p2" class="product-size-input" id="xs-p2" checked>
+                  <label for="xs-p2" class="product-size-label">xs</label>
+                </div>
+                <div>
+                  <input type="radio" name="size-p2" class="product-size-input" id="s-p2">
+                  <label for="s-p2" class="product-size-label">s</label>
+                </div>
+                <div>
+                  <input type="radio" name="size-p2" class="product-size-input" id="m-p2">
+                  <label for="m-p2" class="product-size-label">m</label>
+                </div>
+                <div>
+                  <input type="radio" name="size-p2" class="product-size-input" id="l-p2">
+                  <label for="l-p2" class="product-size-label">l</label>
+                </div>
+                <div>
+                  <input type="radio" name="size-p2" class="product-size-input" id="xl-p2">
+                  <label for="xl-p2" class="product-size-label">xl</label>
+                </div>
+              </div>
+
+              <button class="button product-button w-100"
+                onclick="addToCart(2, 'Váy dự tiệc', 350000, 'assets/images/sanpham-2.jpeg')">
+                Add to Cart
+              </button>
+            </div>
+          </div>
+          <div class="product-bottom">
+            <div>
+              <h3 class="product-title">
+                <a href="details.html">Váy dự tiệc</a>
+              </h3>
+              <span class="product-price">350.000 vnđ</span>
+            </div>
+            <a href="#" class="product-wishlist">
+              <i class="ri-heart-line"></i>
+            </a>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-6 product-card">
+          <div class="product-header">
+            <img src="assets/images/sanpham-3.png" alt="" class="product-img">
+
+            <div class="product-content">
+              <div class="product-top">
+                <ul class="product-stars">
+                  <li><i class="ri-star-fill"></i></li>
+                  <li><i class="ri-star-fill"></i></li>
+                  <li><i class="ri-star-fill"></i></li>
+                  <li><i class="ri-star-fill"></i></li>
+                  <li><i class="ri-star-fill"></i></li>
+                  <li class="product-rating">5.0</li>
+                </ul>
+              </div>
+
+              <div class="product-size">
+                <div>
+                  <input type="radio" name="size-p3" class="product-size-input" id="xs-p3" checked>
+                  <label for="xs-p3" class="product-size-label">xs</label>
+                </div>
+                <div>
+                  <input type="radio" name="size-p3" class="product-size-input" id="s-p3">
+                  <label for="s-p3" class="product-size-label">s</label>
+                </div>
+                <div>
+                  <input type="radio" name="size-p3" class="product-size-input" id="m-p3">
+                  <label for="m-p3" class="product-size-label">m</label>
+                </div>
+                <div>
+                  <input type="radio" name="size-p3" class="product-size-input" id="l-p3">
+                  <label for="l-p3" class="product-size-label">l</label>
+                </div>
+                <div>
+                  <input type="radio" name="size-p3" class="product-size-input" id="xl-p3">
+                  <label for="xl-p3" class="product-size-label">xl</label>
+                </div>
+              </div>
+
+              <button class="button product-button w-100"
+                onclick="addToCart(3, 'Quần short jean nữ', 180000, 'assets/images/sanpham-3.png')">
+                Add to Cart
+              </button>
+            </div>
+          </div>
+          <div class="product-bottom">
+            <div>
+              <h3 class="product-title">
+                <a href="details.html">Quần short jean nữ</a>
+              </h3>
+              <span class="product-price">180.000 vnđ</span>
+            </div>
+            <a href="#" class="product-wishlist">
+              <i class="ri-heart-line"></i>
+            </a>
+          </div>
+        </div>
+
+      </div>
+
       <div class="row">
-        <div class="col-lg-4 col-6">
+        <div class="col-lg-4 col-6 product-card">
           <div class="product-header">
-            <img src="assets/img/product-1.jpg" alt="" class="product-img">
+            <img src="assets/images/sanpham-4.jpg" alt="" class="product-img">
 
             <div class="product-content">
               <div class="product-top">
@@ -157,48 +323,45 @@
                   <li><i class="ri-star-fill"></i></li>
                   <li><i class="ri-star-fill"></i></li>
                   <li><i class="ri-star-fill"></i></li>
-
                   <li class="product-rating">5.0</li>
                 </ul>
               </div>
 
               <div class="product-size">
                 <div>
-                  <input type="radio" name="size" class="product-size-input" id="xs" cheked>
-                  <label for="xs" class="product-size-label">xs</label>
+                  <input type="radio" name="size-p4" class="product-size-input" id="xs-p4" checked>
+                  <label for="xs-p4" class="product-size-label">xs</label>
                 </div>
-
                 <div>
-                  <input type="radio" name="size" class="product-size-input" id="s">
-                  <label for="s" class="product-size-label">s</label>
+                  <input type="radio" name="size-p4" class="product-size-input" id="s-p4">
+                  <label for="s-p4" class="product-size-label">s</label>
                 </div>
-
                 <div>
-                  <input type="radio" name="size" class="product-size-input" id="m">
-                  <label for="m" class="product-size-label">m</label>
+                  <input type="radio" name="size-p4" class="product-size-input" id="m-p4">
+                  <label for="m-p4" class="product-size-label">m</label>
                 </div>
-
                 <div>
-                  <input type="radio" name="size" class="product-size-input" id="l">
-                  <label for="l" class="product-size-label">l</label>
+                  <input type="radio" name="size-p4" class="product-size-input" id="l-p4">
+                  <label for="l-p4" class="product-size-label">l</label>
                 </div>
-
                 <div>
-                  <input type="radio" name="size" class="product-size-input" id="xl">
-                  <label for="xl" class="product-size-label">xl</label>
+                  <input type="radio" name="size-p4" class="product-size-input" id="xl-p4">
+                  <label for="xl-p4" class="product-size-label">xl</label>
                 </div>
               </div>
 
-              <a href="details.html" class="button product-button">Add to Cart</a>
+              <button class="button product-button w-100"
+                onclick="addToCart(4, 'Quần ống rộng', 169000, 'assets/images/sanpham-4.jpg')">
+                Add to Cart
+              </button>
             </div>
           </div>
           <div class="product-bottom">
             <div>
               <h3 class="product-title">
-                <a href="details.html">Lorem ipsum dolor sit amet.</a>
+                <a href="details.html">Quần ống rộng</a>
               </h3>
-
-              <span class="product-price">$145.00</span>
+              <span class="product-price">169.000 vnđ</span>
             </div>
             <a href="#" class="product-wishlist">
               <i class="ri-heart-line"></i>
@@ -206,9 +369,9 @@
           </div>
         </div>
 
-        <div class="col-lg-4 col-6">
+        <div class="col-lg-4 col-6 product-card">
           <div class="product-header">
-            <img src="assets/img/product-1.jpg" alt="" class="product-img">
+            <img src="assets/images/sanpham-5.jpeg" alt="" class="product-img">
 
             <div class="product-content">
               <div class="product-top">
@@ -218,48 +381,45 @@
                   <li><i class="ri-star-fill"></i></li>
                   <li><i class="ri-star-fill"></i></li>
                   <li><i class="ri-star-fill"></i></li>
-
                   <li class="product-rating">5.0</li>
                 </ul>
               </div>
 
               <div class="product-size">
                 <div>
-                  <input type="radio" name="size" class="product-size-input" id="xs" cheked>
-                  <label for="xs" class="product-size-label">xs</label>
+                  <input type="radio" name="size-p5" class="product-size-input" id="xs-p5" checked>
+                  <label for="xs-p5" class="product-size-label">xs</label>
                 </div>
-
                 <div>
-                  <input type="radio" name="size" class="product-size-input" id="s">
-                  <label for="s" class="product-size-label">s</label>
+                  <input type="radio" name="size-p5" class="product-size-input" id="s-p5">
+                  <label for="s-p5" class="product-size-label">s</label>
                 </div>
-
                 <div>
-                  <input type="radio" name="size" class="product-size-input" id="m">
-                  <label for="m" class="product-size-label">m</label>
+                  <input type="radio" name="size-p5" class="product-size-input" id="m-p5">
+                  <label for="m-p5" class="product-size-label">m</label>
                 </div>
-
                 <div>
-                  <input type="radio" name="size" class="product-size-input" id="l">
-                  <label for="l" class="product-size-label">l</label>
+                  <input type="radio" name="size-p5" class="product-size-input" id="l-p5">
+                  <label for="l-p5" class="product-size-label">l</label>
                 </div>
-
                 <div>
-                  <input type="radio" name="size" class="product-size-input" id="xl">
-                  <label for="xl" class="product-size-label">xl</label>
+                  <input type="radio" name="size-p5" class="product-size-input" id="xl-p5">
+                  <label for="xl-p5" class="product-size-label">xl</label>
                 </div>
               </div>
 
-              <a href="details.html" class="button product-button">Add to Cart</a>
+              <button class="button product-button w-100"
+                onclick="addToCart(5, 'Áo Thun Nữ Basic', 290000, 'assets/images/sanpham-5.jpeg')">
+                Add to Cart
+              </button>
             </div>
           </div>
           <div class="product-bottom">
             <div>
               <h3 class="product-title">
-                <a href="details.html">Lorem ipsum dolor sit amet.</a>
+                <a href="details.html">Áo Thun Nữ Basic</a>
               </h3>
-
-              <span class="product-price">$145.00</span>
+              <span class="product-price">290.000 vnđ</span>
             </div>
             <a href="#" class="product-wishlist">
               <i class="ri-heart-line"></i>
@@ -267,9 +427,9 @@
           </div>
         </div>
 
-        <div class="col-lg-4 col-6">
+        <div class="col-lg-4 col-6 product-card">
           <div class="product-header">
-            <img src="assets/img/product-1.jpg" alt="" class="product-img">
+            <img src="assets/images/sanpham-6.jpeg" alt="" class="product-img">
 
             <div class="product-content">
               <div class="product-top">
@@ -279,239 +439,54 @@
                   <li><i class="ri-star-fill"></i></li>
                   <li><i class="ri-star-fill"></i></li>
                   <li><i class="ri-star-fill"></i></li>
-
                   <li class="product-rating">5.0</li>
                 </ul>
               </div>
 
               <div class="product-size">
                 <div>
-                  <input type="radio" name="size" class="product-size-input" id="xs" cheked>
-                  <label for="xs" class="product-size-label">xs</label>
+                  <input type="radio" name="size-p6" class="product-size-input" id="xs-p6" checked>
+                  <label for="xs-p6" class="product-size-label">xs</label>
                 </div>
-
                 <div>
-                  <input type="radio" name="size" class="product-size-input" id="s">
-                  <label for="s" class="product-size-label">s</label>
+                  <input type="radio" name="size-p6" class="product-size-input" id="s-p6">
+                  <label for="s-p6" class="product-size-label">s</label>
                 </div>
-
                 <div>
-                  <input type="radio" name="size" class="product-size-input" id="m">
-                  <label for="m" class="product-size-label">m</label>
+                  <input type="radio" name="size-p6" class="product-size-input" id="m-p6">
+                  <label for="m-p6" class="product-size-label">m</label>
                 </div>
-
                 <div>
-                  <input type="radio" name="size" class="product-size-input" id="l">
-                  <label for="l" class="product-size-label">l</label>
+                  <input type="radio" name="size-p6" class="product-size-input" id="l-p6">
+                  <label for="l-p6" class="product-size-label">l</label>
                 </div>
-
                 <div>
-                  <input type="radio" name="size" class="product-size-input" id="xl">
-                  <label for="xl" class="product-size-label">xl</label>
+                  <input type="radio" name="size-p6" class="product-size-input" id="xl-p6">
+                  <label for="xl-p6" class="product-size-label">xl</label>
                 </div>
               </div>
 
-              <a href="details.html" class="button product-button">Add to Cart</a>
+              <button class="button product-button w-100"
+                onclick="addToCart(6, 'Áo Sơ Mi Nữ Thanh Lịch', 300000, 'assets/images/sanpham-6.jpeg')">
+                Add to Cart
+              </button>
             </div>
           </div>
           <div class="product-bottom">
             <div>
               <h3 class="product-title">
-                <a href="details.html">Lorem ipsum dolor sit amet.</a>
+                <a href="details.html">Áo Sơ Mi Nữ Thanh Lịch</a>
               </h3>
-
-              <span class="product-price">$145.00</span>
+              <span class="product-price">300.000 vnđ</span>
             </div>
             <a href="#" class="product-wishlist">
               <i class="ri-heart-line"></i>
             </a>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-lg-4 col-6">
-            <div class="product-header">
-              <img src="assets/img/product-1.jpg" alt="" class="product-img">
-
-              <div class="product-content">
-                <div class="product-top">
-                  <ul class="product-stars">
-                    <li><i class="ri-star-fill"></i></li>
-                    <li><i class="ri-star-fill"></i></li>
-                    <li><i class="ri-star-fill"></i></li>
-                    <li><i class="ri-star-fill"></i></li>
-                    <li><i class="ri-star-fill"></i></li>
-
-                    <li class="product-rating">5.0</li>
-                  </ul>
-                </div>
-
-                <div class="product-size">
-                  <div>
-                    <input type="radio" name="size" class="product-size-input" id="xs" cheked>
-                    <label for="xs" class="product-size-label">xs</label>
-                  </div>
-
-                  <div>
-                    <input type="radio" name="size" class="product-size-input" id="s">
-                    <label for="s" class="product-size-label">s</label>
-                  </div>
-
-                  <div>
-                    <input type="radio" name="size" class="product-size-input" id="m">
-                    <label for="m" class="product-size-label">m</label>
-                  </div>
-
-                  <div>
-                    <input type="radio" name="size" class="product-size-input" id="l">
-                    <label for="l" class="product-size-label">l</label>
-                  </div>
-
-                  <div>
-                    <input type="radio" name="size" class="product-size-input" id="xl">
-                    <label for="xl" class="product-size-label">xl</label>
-                  </div>
-                </div>
-
-                <a href="details.html" class="button product-button">Add to Cart</a>
-              </div>
-            </div>
-            <div class="product-bottom">
-              <div>
-                <h3 class="product-title">
-                  <a href="details.html">Lorem ipsum dolor sit amet.</a>
-                </h3>
-
-                <span class="product-price">$145.00</span>
-              </div>
-              <a href="#" class="product-wishlist">
-                <i class="ri-heart-line"></i>
-              </a>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-6">
-            <div class="product-header">
-              <img src="assets/img/product-1.jpg" alt="" class="product-img">
-
-              <div class="product-content">
-                <div class="product-top">
-                  <ul class="product-stars">
-                    <li><i class="ri-star-fill"></i></li>
-                    <li><i class="ri-star-fill"></i></li>
-                    <li><i class="ri-star-fill"></i></li>
-                    <li><i class="ri-star-fill"></i></li>
-                    <li><i class="ri-star-fill"></i></li>
-
-                    <li class="product-rating">5.0</li>
-                  </ul>
-                </div>
-
-                <div class="product-size">
-                  <div>
-                    <input type="radio" name="size" class="product-size-input" id="xs" cheked>
-                    <label for="xs" class="product-size-label">xs</label>
-                  </div>
-
-                  <div>
-                    <input type="radio" name="size" class="product-size-input" id="s">
-                    <label for="s" class="product-size-label">s</label>
-                  </div>
-
-                  <div>
-                    <input type="radio" name="size" class="product-size-input" id="m">
-                    <label for="m" class="product-size-label">m</label>
-                  </div>
-
-                  <div>
-                    <input type="radio" name="size" class="product-size-input" id="l">
-                    <label for="l" class="product-size-label">l</label>
-                  </div>
-
-                  <div>
-                    <input type="radio" name="size" class="product-size-input" id="xl">
-                    <label for="xl" class="product-size-label">xl</label>
-                  </div>
-                </div>
-
-                <a href="details.html" class="button product-button">Add to Cart</a>
-              </div>
-            </div>
-            <div class="product-bottom">
-              <div>
-                <h3 class="product-title">
-                  <a href="details.html">Lorem ipsum dolor sit amet.</a>
-                </h3>
-
-                <span class="product-price">$145.00</span>
-              </div>
-              <a href="#" class="product-wishlist">
-                <i class="ri-heart-line"></i>
-              </a>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-6">
-            <div class="product-header">
-              <img src="assets/img/product-1.jpg" alt="" class="product-img">
-
-              <div class="product-content">
-                <div class="product-top">
-                  <ul class="product-stars">
-                    <li><i class="ri-star-fill"></i></li>
-                    <li><i class="ri-star-fill"></i></li>
-                    <li><i class="ri-star-fill"></i></li>
-                    <li><i class="ri-star-fill"></i></li>
-                    <li><i class="ri-star-fill"></i></li>
-
-                    <li class="product-rating">5.0</li>
-                  </ul>
-                </div>
-
-                <div class="product-size">
-                  <div>
-                    <input type="radio" name="size" class="product-size-input" id="xs" cheked>
-                    <label for="xs" class="product-size-label">xs</label>
-                  </div>
-
-                  <div>
-                    <input type="radio" name="size" class="product-size-input" id="s">
-                    <label for="s" class="product-size-label">s</label>
-                  </div>
-
-                  <div>
-                    <input type="radio" name="size" class="product-size-input" id="m">
-                    <label for="m" class="product-size-label">m</label>
-                  </div>
-
-                  <div>
-                    <input type="radio" name="size" class="product-size-input" id="l">
-                    <label for="l" class="product-size-label">l</label>
-                  </div>
-
-                  <div>
-                    <input type="radio" name="size" class="product-size-input" id="xl">
-                    <label for="xl" class="product-size-label">xl</label>
-                  </div>
-                </div>
-
-                <a href="details.html" class="button product-button">Add to Cart</a>
-              </div>
-            </div>
-            <div class="product-bottom">
-              <div>
-                <h3 class="product-title">
-                  <a href="details.html">Lorem ipsum dolor sit amet.</a>
-                </h3>
-
-                <span class="product-price">$145.00</span>
-              </div>
-              <a href="#" class="product-wishlist">
-                <i class="ri-heart-line"></i>
-              </a>
-            </div>
           </div>
         </div>
       </div>
+
+    </div>
   </section>
 
   <footer class="footer">
@@ -588,7 +563,9 @@
   <!-- Swiper -->
   <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
   <!-- MAIN JS -->
-  <script src="assets/js/script.js"></script>
+  <script src="assets/js/main.js"></script>
+  <!-- Cart JS -->
+  <script src="assets/js/cart.js"></script>
   <!-- Home js -->
   <script src="assets/js/home.js"></script>
 </body>
