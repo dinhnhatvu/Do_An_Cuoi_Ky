@@ -24,6 +24,10 @@
                 <img src="assets/img/logo.png" alt="logo" class="navbar-logo">
               </a>
 
+              <button class="navbar-toggler d-md-none" type="button" id="menu-toggle">
+                <i class="ri-menu-line"></i>
+              </button>
+
               <div class="navbar-buttons">
                 <a href="acount.html" class="navbar-button">
                   <i class="ri-user-line"></i>
@@ -41,32 +45,30 @@
           </div>
         </div>
 
-        <div class="row">
+        <div class="row justify-content-between align-items-center">
           <div class="col-12">
-            <nav class="navbar-container">
+            <nav class="navbar-container" id="fixed-menu">
               <ul class="navbar-list">
                 <li class="navbar-item">
-                  <a href="index.html" class="navbar-link">HOME</a>
+                  <a href="index.html" class="navbar-link">TRANG CHỦ</a>
                 </li>
-
                 <li class="navbar-item">
-                  <a href="shop.html" class="navbar-link">SHOP</a>
+                  <a href="shop.html" class="navbar-link">SẢN PHẨM</a>
                 </li>
-
                 <li class="navbar-item">
-                  <a href="index.html" class="navbar-link">ACCOUNT</a>
+                  <a href="index.html" class="navbar-link">LIÊN HỆ</a>
                 </li>
-
-                <li class="navbar-item">
-                  <a href="index.html" class="navbar-link">CONTACT</a>
+                <li class="navbar-item d-md-none">
+                  <a href="acount.html" class="navbar-link">TÀI KHOẢN</a>
                 </li>
-
+                <li class="navbar-item d-md-none">
+                  <a href="cart.html" class="navbar-link">GIỎ HÀNG</a>
+                </li>
                 <li class="navbar-item">
-                  <a href="fish_tank.html" class="navbar-link">Hồ cá</a>
+                  <a href="fish_tank.html" class="navbar-link">HỒ CÁ</a>
                 </li>
               </ul>
-
-              <div class="navbar-contact">
+              <div class="navbar-item navbar-contact-mobile">
                 <img src="assets/img/call.svg" alt="" class="navbar-icon">
                 <span>099 887 889</span>
               </div>
@@ -74,7 +76,6 @@
           </div>
         </div>
       </div>
-    </div>
     </div>
   </header>
 
