@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Shop</title>
+  <title>VAGM Shop</title>
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
   <link href="https://cdn.jsdelivr.net/npm/remixicon@4.7.0/fonts/remixicon.css" rel="stylesheet" />
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css" />
@@ -24,6 +24,10 @@
               <a href="index.html">
                 <img src="assets/img/logo.png" alt="logo" class="navbar-logo">
               </a>
+
+              <button class="navbar-toggler d-md-none" type="button" id="menu-toggle">
+                <i class="ri-menu-line"></i>
+              </button>
 
               <div class="navbar-buttons">
                 <a href="acount.html" class="navbar-button">
@@ -47,19 +51,22 @@
             <nav class="navbar-container" id="fixed-menu">
               <ul class="navbar-list">
                 <li class="navbar-item">
-                  <a href="index.html" class="navbar-link">HOME</a>
+                  <a href="index.html" class="navbar-link">TRANG CHỦ</a>
                 </li>
                 <li class="navbar-item">
-                  <a href="shop.html" class="navbar-link">SHOP</a>
+                  <a href="shop.html" class="navbar-link">SẢN PHẨM</a>
                 </li>
                 <li class="navbar-item">
-                  <a href="acount.html" class="navbar-link">ACCOUNT</a>
+                  <a href="index.html" class="navbar-link">LIÊN HỆ</a>
+                </li>
+                <li class="navbar-item d-md-none">
+                  <a href="acount.html" class="navbar-link">TÀI KHOẢN</a>
+                </li>
+                <li class="navbar-item d-md-none">
+                  <a href="cart.html" class="navbar-link">GIỎ HÀNG</a>
                 </li>
                 <li class="navbar-item">
-                  <a href="index.html" class="navbar-link">CONTACT</a>
-                </li>
-                <li class="navbar-item">
-                  <a href="fish_tank.html" class="navbar-link">Hồ cá</a>
+                  <a href="fish_tank.html" class="navbar-link">HỒ CÁ</a>
                 </li>
               </ul>
               <div class="navbar-item navbar-contact-mobile">
@@ -80,34 +87,23 @@
       <div class="swiper home-swiper">
         <div class="swiper-wrapper">
           <!-- SLIDE 1 -->
-          <div class="swiper-slide" style="background: url(assets/img/home-img-1.jpg) center/cover no-repeat;">
+          <div class="swiper-slide" style="background: url(assets/images/home-banner2.jpg) center/cover no-repeat;">
             <div class="container">
               <div class="home-tag">
                 <img src="assets/img/bolt.svg" alt="bolt" class="home-img"> Top Trending
               </div>
 
-              <h1 class="home-title">Lorem ipsum dolor sit amet.</h1>
+              <h1 class="home-title">Phong Cách Tiểu Thư</h1>
 
-              <p class="home-desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est, ab. Facere laboriosam
-                sunt reprehenderit asperiores ut culpa voluptatem eum necessitatibus.</p>
+              <p class="home-desc">Diện ngay phong cách tiểu thư ngọt ngào với những thiết kế pastel nhẹ nhàng, chất
+                liệu mềm mại và chi tiết bèo – nơ tinh tế. Bộ sưu tập giúp nàng thêm nữ tính, thanh lịch và tự tin tỏa
+                sáng trong mọi khoảnh khắc.</p>
 
               <a href="" class="button">Shop Now</a>
             </div>
           </div>
           <!-- SLIDE 2 -->
-          <div class="swiper-slide" style="background: url(assets/img/home-img-2.jpg) center/cover no-repeat;">
-            <div class="container">
-              <div class="home-tag">
-                <img src="assets/img/bolt.svg" alt="bolt" class="home-img"> Top Trending
-              </div>
-
-              <h1 class="home-title">Lorem ipsum dolor sit amet.</h1>
-
-              <p class="home-desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est, ab. Facere laboriosam
-                sunt reprehenderit asperiores ut culpa voluptatem eum necessitatibus.</p>
-
-              <a href="" class="button">Shop Now</a>
-            </div>
+          <div class="swiper-slide" style="background: url(assets/images/home-banner-1.avif) center/cover no-repeat;">
           </div>
         </div>
 
@@ -120,8 +116,8 @@
   <!-- PRODUCTS -->
   <section class="product container">
     <div class="inner-title">
-      <h5 class="product-sub-title">CHECK OUT PRODUCT OF THE DAY</h5>
-      <h1 class="product-title">Elevate your lifestyle</h1>
+      <h5 class="product-sub-title">SẢN PHẨM NỔI BẬT</h5>
+      <h1 class="product-title">Nâng tầm phong cách sống</h1>
       <div class="line"></div>
     </div>
 
@@ -488,46 +484,56 @@
   <!-- END PRODUCTS -->
 
   <!-- CATEGORIES -->
-  <section class="categories container">
-    <h5 class="categories-subtitle">Lorem ipsum dolor sit amet.</h5>
+  <section class="categories container py-5">
+    <h5 class="categories-subtitle">KHÁM PHÁ CÁC DÒNG SẢN PHẨM PHONG PHÚ CỦA CHÚNG TÔI</h5>
     <div class="categories-header">
-      <h1 class="categories-title">Lorem ipsum dolor sit amet.</h1>
+      <h1 class="categories-title">Tìm Kiếm Theo Phân Loại</h1>
 
-      <a href="shop.html" class="button categories-button">View all categories</a>
+      <a href="shop.html" class="button categories-button">TOÀN BỘ SẢN PHẨM</a>
     </div>
 
-    <div class="categories-list">
-      <div class="categories-list-left">
-        <div class="catetories-left-title">
-          <h2 class="categories-title">ALL PRODUCT</h2>
-          <p class="categories-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus sunt quis dolorum
-            aliquid corporis ex.</p>
-        </div>
-
-        <div class="categories-buttons">
-          <a href="shop.html" class="categories-link">New Arrivals<i class="ri-arrow-right-line"></i></a>
-          <a href="shop.html" class="categories-link">Treding Items<i class="ri-arrow-right-line"></i></a>
-          <a href="shop.html" class="categories-link">Brand Collection<i class="ri-arrow-right-line"></i></a>
-        </div>
-      </div>
-      <div class="categories-list-right">
-        <div class="categories-top-right">
-          <h2 class="categories-title">ALL PRODUCT</h2>
-          <p class="categories-desc">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus sunt quis dolorum aliquid corporis ex.
-          </p>
-        </div>
-        <div class="categories-bottom-right">
-          <div class="bottom-left">
-            <a href="shop.html" class="categories-link">Women Pants</a>
-          </div>
-          <div class="bottom-right">
-            <a href="shop.html" class="categories-link">Accessories</a>
+  <div class="row g-4"> 
+    <div class="col-lg-5 col-md-6 mb-4">
+      <div class="category-card main-card" style="background-image: url('assets/images/Hinh1.png');">
+        <div class="card-overlay-bottom">
+          <div class="d-grid gap-2">
+            <a href="#" class="btn btn-pill-outline">Sản phẩm mới về <i class="ri-arrow-right-line"></i></a>
+            <a href="#" class="btn btn-pill-outline">Sản phẩm trending <i class="ri-arrow-right-line"></i></a>
+            <a href="#" class="btn btn-pill-outline">Bộ sưu tập <i class="ri-arrow-right-line"></i></a>
           </div>
         </div>
       </div>
     </div>
-  </section>
+
+    <div class="col-lg-7 col-md-6">
+      <div class="row g-4">
+        
+        <div class="col-12 mb-4">
+          <div class="category-card horizontal-card" style="background-image: url('assets/images/Hinh3.png');">
+            <div class="card-content-left">
+              <h2 class="fw-bold">TOÀN BỘ SẢN PHẨM</h2>
+              <p class="text-muted w-75">Khám phá vô vàn lựa chọn tuyệt vời với bộ sưu tập Toàn Bộ Sản Phẩm của chúng tôi</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-sm-6">
+          <div class="category-card square-card" style="background-image: url('assets/images/Hinh2.png');">
+            <a href="#" class="btn btn-white-pill">Đồ Nữ</a>
+          </div>
+        </div>
+
+        <div class="col-sm-6">
+          <div class="category-card square-card" style="background-image: url('assets/images/Hinh4.png');">
+            <a href="#" class="btn btn-white-pill">Phụ Kiện</a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+  </div>
+</section>
   <!-- END CATEGORIES -->
 
   <!-- FEATURE -->
@@ -539,8 +545,8 @@
             <img src="assets/img/features-img-1.svg" alt="" class="features-img">
 
             <div class="features-data">
-              <h3 class="features-title">Certified</h3>
-              <p>Lorem ipsum dolor sit amet.</p>
+              <h3 class="features-title">Chất Lượng</h3>
+              <p>Cam kết cung cấp giấy chứng nhận xác thực sản phẩm</p>
             </div>
           </div>
         </div>
@@ -549,8 +555,8 @@
             <img src="assets/img/features-img-2.svg" alt="" class="features-img">
 
             <div class="features-data">
-              <h3 class="features-title">Certified</h3>
-              <p>Lorem ipsum dolor sit amet.</p>
+              <h3 class="features-title">Thanh Toán</h3>
+              <p>Dễ dàng, Nhanh chóng, Giá cả phải chăng</p>
             </div>
           </div>
         </div>
@@ -560,8 +566,8 @@
             <img src="assets/img/features-img-3.svg" alt="" class="features-img">
 
             <div class="features-data">
-              <h3 class="features-title">Certified</h3>
-              <p>Lorem ipsum dolor sit amet.</p>
+              <h3 class="features-title">Vận Chuyển</h3>
+              <p>Miễn phí, Nhanh chóng và Phạm vi toàn quốc</p>
             </div>
           </div>
         </div>
@@ -571,8 +577,8 @@
             <img src="assets/img/features-img-4.svg" alt="" class="features-img">
 
             <div class="features-data">
-              <h3 class="features-title">Certified</h3>
-              <p>Lorem ipsum dolor sit amet.</p>
+              <h3 class="features-title">Đổi trả</h3>
+              <p>Chính sách đổi trả rõ ràng, thuận tiện</p>
             </div>
           </div>
         </div>
@@ -587,26 +593,26 @@
       <div class="container">
         <div class="row">
           <div class="col-lg-6 center-center-1">
-            <div class="row mt-sm-5">
+            <div class="row mt-5">
               <div class="col-12">
-                <h5 class="sub-title">SUBSCRIBE NEWSLETTER</h5>
+                <h5 class="sub-title">ĐĂNG KÝ NHẬN BẢN TIN</h5>
               </div>
             </div>
             <div class="row">
               <div class="col-12">
-                <h2 class="main-title-1">Enjoy 15% off*</h2>
+                <h2 class="main-title-1">Nhận ngay ưu đãi 15%*</h2>
               </div>
             </div>
             <div class="row mb-4">
               <div class="col-12">
-                <h2 class="main-title-2">your first orther when you sign up</h2>
+                <h2 class="main-title-2">cho đơn hàng đầu tiên khi đăng ký</h2>
               </div>
             </div>
 
             <div class="row">
               <div class="col-12">
                 <form action="" class="newsletter-form">
-                  <input type="text" placeholder="Email Address..." class="newsletter-input">
+                  <input type="text" placeholder="Địa chỉ Email..." class="newsletter-input">
 
                   <button class="newsletter-button">
                     <i class="ri-arrow-right-line"></i>
@@ -615,13 +621,13 @@
             </div>
             <div class="row">
               <div class="col-12">
-                <p>*Lorem, ipsum dolor sit amet consectetur adipisicing.</p>
+                <p>*Chỉ dành cho tài khoản lần đầu tiên đăng ký.</p>
               </div>
             </div>
           </div>
 
           <div class="col-lg-6">
-            <img src="assets/img/subscribe-img-3.jpg" class="w-70">
+            <img src="assets/images/salexong.jpg" class="w-70">
           </div>
         </div>
       </div>
@@ -630,75 +636,76 @@
   <!-- END NEWSLETTER -->
 
   <!-- FOOTER -->
-  <footer class="footer">
+  <footer class="footer py-5">
     <div class="container">
       <div class="row">
-        <div class="col-lg-3">
-          <div class="row">
-            <div class="col-12">
-              <a href="index.html">
-                <img src="assets/img/footer-logo.png" alt="footer-logo" class="footer-logo">
-              </a>
-            </div>
+
+        <div class="col-md-4">
+          <h5 class="text-uppercase mb-3 text-orange">Giới Thiệu</h5>
+          <ul class="list-unstyled">
+            <li><a href="#">Về Chúng Tôi</a></li>
+            <li><a href="#">Sản phẩm</a></li>
+            <li><a href="#">Khuyến mãi</a></li>
+            <li><a href="#">Cửa hàng</a></li>
+            <li><a href="#">Tuyển dụng</a></li>
+          </ul>
+          <h5 class="text-uppercase mt-4 mb-3 text-orange">Điều Khoản</h5>
+          <ul class="list-unstyled">
+            <li><a href="#">Về Chúng Tôi</a></li>
+            <li><a href="#">Chính sách bảo mật thông tin</a></li>
+            <li><a href="#">Hướng dẫn xuất hóa đơn GTGT</a></li>
+          </ul>
+        </div>
+
+        <div class="col-md-4">
+          <h5 class="mb-4 text-orange">© 2025 THE VAGM SHOP</h5>
+
+          <div class="mb-4">
+            <span class="text-orange">VPGG:</span> Tầng 6, 280 An Dương Vương, Phường 4, Quận 5, TP. Hồ Chí Minh
           </div>
 
-          <div class="row mt-50">
-            <div class="col-4">
-              <a href="#" class="socials">
+          <div class="mb-4">
+            <span class="text-orange">Đặt hàng:</span> 1800 3636
+            <br>
+            <span class="text-orange">Email:</span> the.vagm@gmail.com
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <h2 class="mb-4">THE VAGM SHOP</h2>
+          <h5 class="text-orange mb-4">
+            DOWNLOAD APP
+            <br>
+            THE VAGM SHOP APP
+          </h5>
+          <img src="assets/images/ma_qr.png" alt="ma_qr" class="mb-4">
+          <h5 class="mb-2 text-orange">FOLLOW US</h5>
+          <div class="d-flex align-items-center mb-4">
+            <div class="col-2 p-0">
+              <a href="#" class="social-icons">
                 <i class="ri-facebook-circle-fill"></i>
               </a>
             </div>
 
-            <div class="col-4">
-              <a href="#" class="socials">
-                <i class="ri-facebook-circle-fill"></i>
+            <div class="col-2 p-0">
+              <a href="#" class="social-icons">
+                <i class="ri-youtube-fill"></i>
               </a>
             </div>
 
-            <div class="col-4">
-              <a href="#" class="socials">
-                <i class="ri-facebook-circle-fill"></i>
+            <div class="col-2 p-0">
+              <a href="#" class="social-icons">
+                <i class="ri-instagram-fill"></i>
               </a>
             </div>
           </div>
-        </div>
-        <div class="col-lg-3 d-flex flex-column gap-3">
-          <h3>Contact</h3>
-          <div class="footer-contact">
-            <img src="assets/img/call.svg" alt="" class="footer-icon">
-            <span>099 887 889</span>
-          </div>
-
-          <div class="footer-mail">
-            <img src="assets/img/call.svg" alt="" class="footer-icon">
-            <span>099 887 889</span>
-          </div>
-
-          <div class="footer-contact">
-            <img src="assets/img/call.svg" alt="" class="footer-icon">
-            <span>099 887 889</span>
-          </div>
-        </div>
-        <div class="col-lg-3 d-flex flex-column">
-          <h3>About</h3>
-          <span>About us</span>
-          <span>About us</span>
-          <span>About us</span>
-          <span>About us</span>
-          <span>About us</span>
-        </div>
-        <div class="col-lg-3 d-flex flex-column">
-          <h3>About</h3>
-          <span>About us</span>
-          <span>About us</span>
-          <span>About us</span>
-          <span>About us</span>
-          <span>About us</span>
         </div>
       </div>
     </div>
   </footer>
   <!-- END FOOTER -->
+
+
 
 
   <!-- Swiper -->

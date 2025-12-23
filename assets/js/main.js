@@ -1,3 +1,8 @@
+document.getElementById('menu-toggle').addEventListener('click', function() {
+  const menu = document.getElementById('fixed-menu');
+  menu.classList.toggle('active');
+});
+
 function addToCart(id, name, price, img) {
     // --- BƯỚC 1: LẤY SIZE ---
     // Tạo tên nhóm size dựa trên id sản phẩm (ví dụ: size-p1)
