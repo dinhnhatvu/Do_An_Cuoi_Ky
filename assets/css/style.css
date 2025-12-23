@@ -454,6 +454,21 @@
     margin-bottom: 20px;
 }
 
+.gioi-thieu-section img {
+    max-width: 100%;
+    height: auto;       
+    display: block;      
+}
+
+@media (max-width: 767px) {
+    .gioi-thieu-section, 
+    .gioi-thieu-section .container, 
+    .gioi-thieu-section .row > div {
+        padding-left: 0 !important;  
+        padding-right: 0 !important; 
+    }
+}
+
 /* END NEWSLETTER */
 
 /* FOOTER */
