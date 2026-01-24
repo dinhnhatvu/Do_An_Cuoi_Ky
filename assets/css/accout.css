@@ -1,0 +1,101 @@
+/* Phần tiêu đề Đăng nhập */
+.login-title {
+    font-weight: 700;
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #000;
+}
+
+.title-underline {
+    border-bottom: 1px solid #ddd;
+    /* Đường gạch xám mờ dài */
+    margin-bottom: 30px;
+    position: relative;
+}
+
+.title-underline::after {
+    content: '';
+    display: block;
+    width: 150px;
+    /* Độ dài gạch đỏ */
+    height: 2px;
+    background-color: #d8232a;
+    /* Màu đỏ thương hiệu */
+    position: absolute;
+    bottom: -1px;
+    /* Đè lên đường gạch xám */
+    left: 0;
+}
+
+/* Tùy chỉnh Form input */
+.form-label {
+    font-size: 0.85rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: #666;
+    margin-bottom: 5px;
+    letter-spacing: 1px;
+}
+
+.form-control {
+    border: none;
+    border-bottom: 1px solid #ccc;
+    /* Chỉ giữ viền dưới */
+    border-radius: 0;
+    /* Vuông góc */
+    padding: 10px 0;
+    background-color: transparent;
+    box-shadow: none !important;
+    /* Bỏ hiệu ứng glow xanh khi bấm vào */
+}
+
+.form-control:focus {
+    border-bottom: 1px solid #000;
+}
+
+/* Nút Đăng nhập */
+.btn-login {
+    border: 1px solid #000;
+    background-color: #fff;
+    color: #000;
+    font-weight: 700;
+    padding: 10px 40px;
+    border-radius: 0;
+    /* Vuông góc */
+    transition: all 0.3s;
+    width: 100%;
+    max-width: 200px;
+}
+
+.btn-login:hover {
+    background-color: #000;
+    color: #fff;
+}
+
+/* Các liên kết phụ */
+.register-link {
+    margin-top: 15px;
+    font-size: 14px;
+}
+
+.register-link a {
+    color: #000;
+    text-decoration: none;
+    font-weight: 700;
+}
+
+.forgot-password {
+    margin-top: 30px;
+    font-weight: 700;
+    font-size: 16px;
+    color: #000;
+    cursor: pointer;
+}
+
+/* Container trắng bao quanh form */
+.login-container {
+    background-color: #fff;
+    padding: 40px;
+    margin-top: 30px;
+    margin-bottom: 50px;
+}

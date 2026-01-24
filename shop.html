@@ -21,7 +21,7 @@
           <div class="col-12">
             <div class="topbar-bar-container">
               <a href="index.html">
-                <img src="assets/img/logo.png" alt="logo" class="navbar-logo">
+                <h2 class="logo">THE VAGM SHOP</h2>
               </a>
 
               <button class="navbar-toggler d-md-none" type="button" id="menu-toggle">
@@ -29,12 +29,8 @@
               </button>
 
               <div class="navbar-buttons">
-                <a href="acount.html" class="navbar-button">
+                <a target="_blank" href="acount.html" class="navbar-button">
                   <i class="ri-user-line"></i>
-                </a>
-
-                <a href="#" class="navbar-button">
-                  <i class="ri-heart-line"></i>
                 </a>
 
                 <a href="cart.html" class="navbar-button">
@@ -56,21 +52,21 @@
                   <a href="shop.html" class="navbar-link">SẢN PHẨM</a>
                 </li>
                 <li class="navbar-item">
-                  <a href="index.html" class="navbar-link">LIÊN HỆ</a>
+                  <a href="#footer-section" class="navbar-link">LIÊN HỆ</a>
                 </li>
                 <li class="navbar-item d-md-none">
-                  <a href="acount.html" class="navbar-link">TÀI KHOẢN</a>
+                  <a target="_blank" href="acount.html" class="navbar-link">TÀI KHOẢN</a>
                 </li>
                 <li class="navbar-item d-md-none">
                   <a href="cart.html" class="navbar-link">GIỎ HÀNG</a>
                 </li>
                 <li class="navbar-item">
-                  <a href="fish_tank.html" class="navbar-link">HỒ CÁ</a>
+                  <a target="_blank" href="fish_tank.html" class="navbar-link">HỒ CÁ</a>
                 </li>
               </ul>
               <div class="navbar-item navbar-contact-mobile">
-                <img src="assets/img/call.svg" alt="" class="navbar-icon">
-                <span>099 887 889</span>
+                <a href="index.html"><img src="assets/images/vi.png" alt="vn"></a>
+                <a href="index-en.html"><img src="assets/images/en.png" alt="en"></a>
               </div>
             </nav>
           </div>
@@ -79,40 +75,18 @@
     </div>
   </header>
 
-  <main class="main">
-    <section class="home banner">
-      <div class="swiper home-swiper">
-        <div class="swiper-wrapper">
-          <!-- SLIDE 1 -->
-          <div class="swiper-slide" style="background: url(assets/img/banner.jpg) center/cover no-repeat;">
-            <div class="container-fluid h-100">
-              <div class="row h-100">
-                <div class="col-12 center-center-2">
-                  <h1>SẢN PHẨM</h1>
-                  <span>TẤT CẢ MỌI THỨ BẠN CẦN BIẾT</span>
-                  <span class="link">TRANG CHỦ / SẢN PHẨM</span>
-                </div>
-              </div>
-            </div>
-          </div>
-          <!-- SLIDE 2 -->
-          <div class="swiper-slide" style="background: url(assets/images/Banner.png) center/cover no-repeat;">
-            <div class="container-fluid h-100">
-              <div class="row h-100">
-                <div class="col-12 center-center-2">
-                  <h1>SẢN PHẨM</h1>
-                  <span>TẤT CẢ MỌI THỨ BẠN CẦN BIẾT</span>
-                  <span class="link">TRANG CHỦ / SẢN PHẨM</span>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="swiper-pagination"></div>
-      </div>
-    </section>
-  </main>
+  <!-- Breadcrumb -->
+  <div class="breadcrumb-section">
+    <div class="container">
+      <nav aria-label="breadcrumb">
+        <ol class="breadcrumb mb-0">
+          <li class="breadcrumb-item"><a href="#">Trang chủ</a></li>
+          <li class="breadcrumb-item active" aria-current="page">Sản phẩm</li>
+        </ol>
+      </nav>
+    </div>
+  </div>
+  <!-- End Breadcrumb -->
 
   <section class="shop-filter">
     <div class="container filter">
@@ -490,7 +464,7 @@
     </div>
   </section>
 
-  <footer class="footer py-5">
+  <footer class="footer py-5" id="footer-section">
     <div class="container">
       <div class="row">
 

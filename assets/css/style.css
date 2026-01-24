@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
 
 :root {
-    --first-color: #DA380B;
+    --first-color: #1c1c1c;
     --title-color: #201E1D;
     --text-color: #484342;
     --text-color-light: #A9A4A2;
@@ -27,18 +27,13 @@
 }
 
 .topbar {
-    padding-top: 20px;
+    padding-top: 5px;
 }
 
 .header .topbar-bar-container {
     display: flex;
     align-items: center;
     justify-content: space-between;
-}
-
-.header .topbar-bar-container img {
-    width: 200px;
-    height: auto;
 }
 
 .header .topbar-bar-container .navbar-form,
@@ -106,6 +101,11 @@
     color: var(--first-color);
 }
 
+.navbar-contact-mobile img {
+    width: 30px;
+    margin-left: 3px;
+}
+
 @media (max-width: 767.98px) {
     .header .navbar-container {
         display: none;
@@ -155,53 +155,55 @@
 
 /* END NAVBAR */
 
-/* HOME */
-.main {
-    padding: 100px 0;
+/* Breadcrumb (Thanh điều hướng nhỏ phía trên) */
+.breadcrumb-section {
+    background-color: #e9ecef;
+    padding: 8px 0;
+    font-size: 14px;
+    color: #333;
+
+    margin-top: 105px;
 }
 
-.main .home .swiper-slide {
-    background-size: contain;
-    background-position: center;
-    background-repeat: no-repeat;
-    width: 100%;
+.breadcrumb {
+    padding: 5px 0;
+}
+
+.breadcrumb .breadcrumb-item {
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+.breadcrumb a {
+    text-decoration: none;
+    color: #333;
+}
+
+.breadcrumb-item.active {
+    color: #6c757d;
+}
+
+@media (max-width: 767.98px) {
+    .breadcrumb-section {
+        margin-top: 78px;
+    }
+}
+
+@media (max-width: 354.02px) {
+    .breadcrumb-section {
+        margin-top: 115px;
+    }
+}
+/* End Breadcrumb*/
+
+/* HOME */
+.main {
+    padding: 100px 0 0 0;
 }
 
 .main .home .home-swiper .swiper-slide {
     width: 100vw;
     height: auto;
-    padding: 100px 50px;
-}
-
-.main .home .home-tag {
-    background: #fff;
-    color: var(--first-color);
-    display: inline-flex;
-    align-items: center;
-    padding: 8px 18px;
-    border-radius: 32px;
-    font-weight: 700;
-}
-
-.main .home .home-title {
-    font-size: 64px;
-    max-width: 800px;
-    margin-top: 20px;
-}
-
-.main .home .home-desc {
-    max-width: 450px;
-    margin-top: 20px;
-    margin-bottom: 20px;
-    color: #fff;
-}
-
-.main .home .button {
-    display: inline-flex;
-    background: var(--first-color);
-    color: #FFF;
-    padding: 16px 40px;
-    border-radius: 30px;
 }
 
 .swiper-pagination-bullet {
@@ -567,6 +569,9 @@ input {
 /* END REVIEW */
 
 /* SHOPPING CART */
+.cart {
+    padding-top: 100px !important;
+}
 
 .cart-item img {
     max-width: 100px;

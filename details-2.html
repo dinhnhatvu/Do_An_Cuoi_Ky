@@ -2,454 +2,325 @@
 <html lang="en">
 
 <head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Details</title>
-	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
-	<link href="https://cdn.jsdelivr.net/npm/remixicon@4.7.0/fonts/remixicon.css" rel="stylesheet" />
-	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css" />
-	<link rel="stylesheet" href="assets/css/base.css">
-	<link rel="stylesheet" href="assets/css/style.css">
-	<link rel="stylesheet" href="assets/css/shop.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Details</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@4.7.0/fonts/remixicon.css" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="assets/css/base.css">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="assets/css/shop.css">
 </head>
 
 <body>
-	<header class="header header-fixed">
-		<div class="topbar">
-			<div class="container">
-				<div class="row">
-					<div class="col-12">
-						<div class="topbar-bar-container">
-							<a href="index.html">
-								<img src="assets/img/logo.png" alt="logo" class="navbar-logo">
-							</a>
+  <header class="header header-fixed">
+    <div class="topbar">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <div class="topbar-bar-container">
+              <a href="index.html">
+                <h2 class="logo">THE VAGM SHOP</h2>
+              </a>
 
-							<div class="navbar-buttons">
-								<a href="acount.html" class="navbar-button">
-									<i class="ri-user-line"></i>
-								</a>
+              <button class="navbar-toggler d-md-none" type="button" id="menu-toggle">
+                <i class="ri-menu-line"></i>
+              </button>
 
-								<a href="#" class="navbar-button">
-									<i class="ri-heart-line"></i>
-								</a>
+              <div class="navbar-buttons">
+                <a target="_blank" href="acount.html" class="navbar-button">
+                  <i class="ri-user-line"></i>
+                </a>
 
-								<a href="cart.html" class="navbar-button">
-									<i class="ri-shopping-cart-line"></i>
-								</a>
-							</div>
-						</div>
-					</div>
-				</div>
+                <a href="cart.html" class="navbar-button">
+                  <i class="ri-shopping-cart-line"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
 
-				<div class="row justify-content-between align-items-center">
-					<div class="col-12">
-						<nav class="navbar-container" id="fixed-menu">
-							<ul class="navbar-list">
-								<li class="navbar-item">
-									<a href="index.html" class="navbar-link">HOME</a>
-								</li>
-								<li class="navbar-item">
-									<a href="shop.html" class="navbar-link">SHOP</a>
-								</li>
-								<li class="navbar-item">
-									<a href="acount.html" class="navbar-link">ACCOUNT</a>
-								</li>
-								<li class="navbar-item">
-									<a href="index.html" class="navbar-link">CONTACT</a>
-								</li>
-								<li class="navbar-item">
-									<a href="fish_tank.html" class="navbar-link">Hồ cá</a>
-								</li>
-							</ul>
-							<div class="navbar-item navbar-contact-mobile">
-								<img src="assets/img/call.svg" alt="" class="navbar-icon">
-								<span>099 887 889</span>
-							</div>
-						</nav>
-					</div>
-				</div>
-			</div>
-		</div>
-	</header>
+        <div class="row justify-content-between align-items-center">
+          <div class="col-12">
+            <nav class="navbar-container" id="fixed-menu">
+              <ul class="navbar-list">
+                <li class="navbar-item">
+                  <a href="index.html" class="navbar-link">TRANG CHỦ</a>
+                </li>
+                <li class="navbar-item">
+                  <a href="shop.html" class="navbar-link">SẢN PHẨM</a>
+                </li>
+                <li class="navbar-item">
+                  <a href="#footer-section" class="navbar-link">LIÊN HỆ</a>
+                </li>
+                <li class="navbar-item d-md-none">
+                  <a target="_blank" href="acount.html" class="navbar-link">TÀI KHOẢN</a>
+                </li>
+                <li class="navbar-item d-md-none">
+                  <a href="cart.html" class="navbar-link">GIỎ HÀNG</a>
+                </li>
+                <li class="navbar-item">
+                  <a target="_blank" href="fish_tank.html" class="navbar-link">HỒ CÁ</a>
+                </li>
+              </ul>
+              <div class="navbar-item navbar-contact-mobile">
+                <a href="index.html"><img src="assets/images/vi.png" alt="vn"></a>
+                <a href="index-en.html"><img src="assets/images/en.png" alt="en"></a>
+              </div>
+            </nav>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
 
-	<main class="main">
-		<section class="home banner home-swiper">
-			<div class="swiper home-swiper">
-				<div class="swiper-slide" style="background: url(assets/img/banner.jpg) center/cover no-repeat;">
-					<div class="container-fluid h-100">
-						<div class="row h-100">
-							<div class="col-12 center-center-2">
-								<h1>Our Products</h1>
-								<span>Lorem ipsum dolor sit amet consectetur.</span>
-								<span class="link">HOME / OUR PRODUCTS / PRODUCT DETAILES</span>
-							</div>
-						</div>
-					</div>
-				</div>
-		</section>
-	</main>
+  <div class="breadcrumb-section">
+    <div class="container">
+      <nav aria-label="breadcrumb">
+        <ol class="breadcrumb mb-0">
+          <li class="breadcrumb-item"><a href="index.html">Trang chủ</a></li>
+          <li class="breadcrumb-item"><a href="shop.html">Sản phẩm</a></li>
+          <li class="breadcrumb-item active" aria-current="page">Áo lông vũ Nam AMRV079-2V</li>
+        </ol>
+      </nav>
+    </div>
+  </div>
 
-	<section class="details">
-		<div class="container">
-			<div class="row">
-				<div class="col-12 col-md-5 mb-4 mb-md-0">
-					<img src="assets/images/sanpham-2.jpeg" class="img-fluid">
-				</div>
+  <section class="details py-5">
+    <div class="container">
+      <div class="row">
+        <div class="col-12 col-md-7 mb-4">
+          <div class="row">
+            <div class="col-2 pr-1">
+              <div class="d-flex flex-column thumb-list">
+                <img src="assets/images/product-2/product-2-1.jpg" class="img-fluid mb-2 border p-1 active-thumb"
+                  onclick="changeImage(this)">
+                <img src="assets/images/product-2/product-2-2.jpg" class="img-fluid mb-2 border p-1" onclick="changeImage(this)">
+                <img src="assets/images/product-2/product-2-3.jpg" class="img-fluid mb-2 border p-1" onclick="changeImage(this)">
+                <img src="assets/images/product-2/product-2-4.jpg" class="img-fluid mb-2 border p-1" onclick="changeImage(this)">
+              </div>
+            </div>
+            <div class="col-10 pl-1">
+              <div class="position-relative border">
+                <span class="badge badge-danger position-absolute"
+                  style="top: 10px; right: 10px; font-size: 0.9rem; padding: 8px;">-10%</span>
+                <img id="mainImage" src="assets/images/product-2/product-2-1.jpg" class="img-fluid w-100" alt="Product Image">
+              </div>
+            </div>
+          </div>
+        </div>
 
-				<div class="col-12 col-md-7 mb-4 mb-md-0">
-					<div class="row">
-						<div class="col-3">
-							<ul class="product-stars">
-								<li><i class="ri-star-fill"></i></li>
-								<li><i class="ri-star-fill"></i></li>
-								<li><i class="ri-star-fill"></i></li>
-								<li><i class="ri-star-fill"></i></li>
-								<li><i class="ri-star-fill"></i></li>
+        <div class="col-12 col-md-5">
+          <h3 class="font-weight-bold mb-1">Áo lông vũ Nam AMRV079-2V</h3>
+          <p class="text-muted small mb-3">Mã SP: AMRV079-2V</p>
 
-								<li class="product-rating">5.0</li>
-							</ul>
-						</div>
-						<div class="col-3">
-							| 22 rating
-						</div>
-						<div class="col-3">
-							| 200 sold
-						</div>
-					</div>
+          <div class="mb-3">
+            <span class="h3 text-danger font-weight-bold">3,172,254₫</span>
+            <span class="text-muted ml-2" style="text-decoration: line-through;">3,524,727₫</span>
+            <div class="text-danger small font-weight-bold">(Tiết kiệm 352,473₫)</div>
+          </div>
 
-					<div class="row mb-3">
-						<div class="col-12">
-							<h1>Váy dự tiệc</h1>
-						</div>
-					</div>
+          <div class="mb-4">
+            <p class="mb-1 font-weight-bold small">Chất liệu</p>
+            <div class="border border-style p-2 d-inline-block small text-uppercase">
+              POLYESTER100%
+            </div>
+          </div>
 
-					<div class="row mb-3">
-						<div class="col-12">
-							<span class="product-price">400.000 vnđ</span>
-						</div>
-					</div>
+          <div class="mb-4">
+            <p class="mb-1 font-weight-bold small">Màu sắc</p>
+            <div class="border border-style p-2 d-inline-block small text-uppercase" style="font-size: 1rem;">
+              <i class="ri-checkbox-blank-circle-fill" style="color: #8A7F6C;"></i>
+              Palm Tree Brown
+            </div>
+          </div>
 
-					<div class="row mb-3">
-						<div class="col-5 d-flex">
-							<i class="ri-check-line mr-1"></i>
-							<h5>Modern Look</h5>
-						</div>
-						<div class="col-5 d-flex">
-							<i class="ri-check-line mr-1"></i>
-							<h5>Modern Look</h5>
-						</div>
-					</div>
+          <div class="mb-4">
+            <div class="d-flex justify-content-between align-items-center mb-2">
+              <span class="font-weight-bold small">Kích thước</span>
+              <a href="#" class="text-secondary small" style="text-decoration: underline;">Hướng dẫn chọn size</a>
+            </div>
 
-					<div class="row mb-3">
-						<div class="col-3">
-							<h5>shipping:</h5>
-						</div>
-						<div class="col-9">
-							<i class="ri-truck-fill shipping-icon"></i>
-							<span>Free shipping</span>
-						</div>
-					</div>
+            <div class="product-size-selector d-flex flex-wrap">
+              <div class="size-option mr-2 mb-2">
+                <input type="radio" name="size-p2" id="size-s" value="S" disabled>
+                <label for="size-s" class="disabled">S</label>
+              </div>
+              <div class="size-option mr-2 mb-2">
+                <input type="radio" name="size-p2" id="size-m" value="M" checked>
+                <label for="size-m">M</label>
+              </div>
+              <div class="size-option mr-2 mb-2">
+                <input type="radio" name="size-p2" id="size-l" value="L">
+                <label for="size-l">L</label>
+              </div>
+              <div class="size-option mr-2 mb-2">
+                <input type="radio" name="size-p2" id="size-xl" value="XL">
+                <label for="size-xl">XL</label>
+              </div>
+              <div class="size-option mr-2 mb-2">
+                <input type="radio" name="size-p2" id="size-xxl" value="XXL">
+                <label for="size-xxl">XXL</label>
+              </div>
+            </div>
+          </div>
 
-					<div class="row mb-3 align-items-center">
-						<div class="col-4">
-							<h5>Select Size:</h5>
-						</div>
-						<div class="col-8 d-flex">
-							<div class="product-size">
-								<div>
-									<input type="radio" name="size-p1" class="product-size-input" id="xs-p1" checked>
-									<label for="xs-p1" class="product-size-label">xs</label>
-								</div>
-								<div>
-									<input type="radio" name="size-p1" class="product-size-input" id="s-p1">
-									<label for="s-p1" class="product-size-label">s</label>
-								</div>
-								<div>
-									<input type="radio" name="size-p1" class="product-size-input" id="m-p1">
-									<label for="m-p1" class="product-size-label">m</label>
-								</div>
-								<div>
-									<input type="radio" name="size-p1" class="product-size-input" id="l-p1">
-									<label for="l-p1" class="product-size-label">l</label>
-								</div>
-								<div>
-									<input type="radio" name="size-p1" class="product-size-input" id="xl-p1">
-									<label for="xl-p1" class="product-size-label">xl</label>
-								</div>
-							</div>
-						</div>
-					</div>
+          <div class="mb-4">
+            <span class="font-weight-bold small d-block mb-2">Số lượng:</span>
+            <div class="input-group" style="width: 120px;">
+              <div class="input-group-prepend">
+                <button class="btn btn-outline-secondary rounded-0" type="button" onclick="changeQty(-1)">-</button>
+              </div>
+              <input type="text" id="product-quantity"
+                class="form-control text-center border-secondary border-left-0 border-right-0" value="1" readonly
+                style="height: auto;">
+              <div class="input-group-append">
+                <button class="btn btn-outline-secondary rounded-0" type="button" onclick="changeQty(1)">+</button>
+              </div>
+            </div>
+          </div>
 
-					<div class="row mb-3 align-items-center">
-						<div class="col-4 d-flex">
-							<button class="btn btn-outline-secondary" type="button" id="button-addon1">
-								<span class="fw-bold fs-5">-</span>
-							</button>
+          <div class="row no-gutters">
+            <div class="col-6 pr-1">
+              <button class="btn btn-outline-dark btn-block py-3 font-weight-bold text-uppercase rounded-0"
+                onclick="addToCart(2, 'Áo lông vũ Nam AMRV079-2V', 3172254, 'assets/images/product-2/product-2-1.jpg')">Thêm vào giỏ</button>
+            </div>
+            <div class="col-6 pl-1">
+              <button class="btn btn-dark btn-block py-3 font-weight-bold text-uppercase rounded-0"
+                style="background-color: #1c1c1c;" onclick="buyNow(2, 'Áo lông vũ Nam AMRV079-2V', 3172254, 'assets/images/product-2/product-2-1.jpg')">Mua ngay</button>
+            </div>
+          </div>
+        </div>
+      </div>
 
-							<input type="text" class="form-control text-center" value="1" readonly style="width: 90px;">
+      <div class="row mt-5">
+        <div class="col-12">
+          <ul class="nav nav-tabs border-bottom-0" id="productTab" role="tablist">
+            <li class="nav-item">
+              <a class="nav-link active font-weight-bold text-uppercase text-dark border-top-0 border-left-0 border-right-0 pl-0"
+                style="font-size: 26px; border-bottom: 4px solid #E497A0; border-radius: 0;" id="desc-tab" data-toggle="tab" href="#desc"
+                role="tab">MÔ TẢ SẢN PHẨM</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link font-weight-bold text-uppercase text-secondary border-0" id="guide-tab"
+                data-toggle="tab" href="#guide" role="tab"></a>
+            </li>
+          </ul>
+          <div class="desc pt-4 border-top" style="margin-top: -2px;">
+            <div class="tab-pane fade show active" id="desc" role="tabpanel">
+              <p class="font-weight-bold">Áo lông vũ Nam AMRV079-2V( 3 lớp )</p>
+              <ul class="pl-3 list-styled">
+                <li>Chất liệu: Polyester100%</li>
+                <li>Công nghệ : GREENSHELL, LN STATIC PROOF</li>
+                <li>Dòng sản phẩm: Bóng rổ/Basketball</li>
+                <li>Form dáng: Regular Fit</li>
+                <li>Xuất xứ: Trung Quốc</li>
+              </ul>
+              <p>
+                Áo ghile WADE lông vũ sử dụng lông ngỗng cao cấp 100g, tỉ lệ 80%. Chất vải kẻ caro cao cấp, không dễ nhăn nhàu, dễ giặt ủi. Phần gấu áo áp dụng thiết kế mới chống gió, là món đồ layering không thể thiếu cho mùa đông.
+              </p>
+              <div class="text-center mt-3">
+                <img class="img-desc" src="assets/images/product-2/product-2-1.jpg" alt="product-1">
+              </div>
 
-							<button class="btn btn-outline-secondary" type="button" id="button-addon2">
-								<span class="fw-bold fs-5">+</span>
-							</button>
-						</div>
-						<div class="col-8">
-							<button class="button product-button"
-								onclick="addToCart(1, 'Váy yếm cổ bèo', 400000, 'assets/images/sanpham-1.jpeg')">
-								Add to Cart
-							</button>
-						</div>
-					</div>
+              <p class="font-weight-bold">Hướng dẫn bảo quản</p>
+              <ul class="pl-3 list-styled">
+                <li>Không giặt thường xuyên, khuyến khích giặt khô</li>
+                <li>Phơi khô tự nhiên, không dùng nhiệt độ cao, tránh ánh nắng trực tiếp</li>
+                <li>Cất giữ ở nơi khô ráo, thoáng mát</li>
+              </ul>
+            </div>
+          </div>
+          <div style="border-bottom: 4px solid #E497A0; border-radius: 0;"></div>
+        </div>
+      </div>
+    </div>
+  </section>
 
-					<div class="row align-items-center">
-						<a class="col-5 d-flex details-button" href="#">
-							<i class="ri-arrow-left-right-line mr-1 details-button"></i>
-							<h5>Add to compare</h5>
-						</a>
+  <footer class="footer py-5" id="footer-section">
+    <div class="container">
+      <div class="row">
 
-						<a class="col-5 d-flex details-button" href="#">
-							<i class="ri-heart-3-line mr-1"></i>
-							<h5>Add to Whislist</h5>
-						</a>
-					</div>
-				</div>
-			</div>
-		</div>
-	</section>
+        <div class="col-md-4">
+          <h5 class="text-uppercase mb-3 text-orange">Giới Thiệu</h5>
+          <ul class="list-unstyled">
+            <li><a href="#">Về Chúng Tôi</a></li>
+            <li><a href="#">Sản phẩm</a></li>
+            <li><a href="#">Khuyến mãi</a></li>
+            <li><a href="#">Cửa hàng</a></li>
+            <li><a href="#">Tuyển dụng</a></li>
+          </ul>
+          <h5 class="text-uppercase mt-4 mb-3 text-orange">Điều Khoản</h5>
+          <ul class="list-unstyled">
+            <li><a href="#">Về Chúng Tôi</a></li>
+            <li><a href="#">Chính sách bảo mật thông tin</a></li>
+            <li><a href="#">Hướng dẫn xuất hóa đơn GTGT</a></li>
+          </ul>
+        </div>
 
-	<section class="review">
-		<h3 class="text-center mb-4">Reviews</h3>
-		<hr>
+        <div class="col-md-4">
+          <h5 class="mb-4 text-orange">© 2025 THE VAGM SHOP</h5>
 
-		<div class="container">
-			<div class="row">
-				<div class="col-lg-6 col-12">
-					<div class="row mb-4">
-						<div class="col-12">
-							<h3 class="review-title">Review</h3>
-						</div>
-					</div>
+          <div class="mb-4">
+            <span class="text-orange">VPGG:</span> Tầng 6, 280 An Dương Vương, Phường 4, Quận 5, TP. Hồ Chí
+            Minh
+          </div>
 
-					<div class="row mb-3">
-						<div class="col-2">
-							<img src="assets/img/comment-1.jpg" alt="comment1" class="img-fluid review-img">
-						</div>
-						<div class="col-10">
-							<div class="row align-items-center">
-								<div class="col-4">
-									<h4 class="review-name">William Smith</h4>
-								</div>
-								<div class="col-4">
-									<h5 class="review-day">Dec 7, 2025</h5>
-								</div>
-								<div class="col-4">
-									<ul class="review-stars">
-										<li><i class="ri-star-fill"></i></li>
-										<li><i class="ri-star-fill"></i></li>
-										<li><i class="ri-star-fill"></i></li>
-										<li><i class="ri-star-fill"></i></li>
-										<li><i class="ri-star-fill"></i></li>
-									</ul>
-								</div>
-							</div>
+          <div class="mb-4">
+            <span class="text-orange">Đặt hàng:</span> 1800 3636
+            <br>
+            <span class="text-orange">Email:</span> the.vagm@gmail.com
+          </div>
+        </div>
 
-							<div class="row">
-								<div class="col-12">
-									<p class="review-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit.
-										Libero voluptas tenetur, dolore deserunt expedita ullam.</p>
-								</div>
-							</div>
-						</div>
-					</div>
+        <div class="col-md-4">
+          <h2 class="mb-4">THE VAGM SHOP</h2>
+          <h5 class="text-orange mb-4">
+            DOWNLOAD APP
+            <br>
+            THE VAGM SHOP APP
+          </h5>
+          <img src="assets/images/ma_qr.png" alt="ma_qr" class="mb-4">
+          <h5 class="mb-2 text-orange">FOLLOW US</h5>
+          <div class="d-flex align-items-center mb-4">
+            <div class="col-2 p-0">
+              <a href="#" class="social-icons">
+                <i class="ri-facebook-circle-fill"></i>
+              </a>
+            </div>
 
-					<div class="row mb-3">
-						<div class="col-2">
-							<img src="assets/img/comment-1.jpg" alt="comment1" class="img-fluid review-img">
-						</div>
-						<div class="col-10">
-							<div class="row align-items-center">
-								<div class="col-4">
-									<h4 class="review-name">William Smith</h4>
-								</div>
-								<div class="col-4">
-									<h5 class="review-day">Dec 7, 2025</h5>
-								</div>
-								<div class="col-4">
-									<ul class="review-stars">
-										<li><i class="ri-star-fill"></i></li>
-										<li><i class="ri-star-fill"></i></li>
-										<li><i class="ri-star-fill"></i></li>
-										<li><i class="ri-star-fill"></i></li>
-										<li><i class="ri-star-fill"></i></li>
-									</ul>
-								</div>
-							</div>
+            <div class="col-2 p-0">
+              <a href="#" class="social-icons">
+                <i class="ri-youtube-fill"></i>
+              </a>
+            </div>
 
-							<div class="row">
-								<div class="col-12">
-									<p class="review-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit.
-										Libero voluptas tenetur, dolore deserunt expedita ullam.</p>
-								</div>
-							</div>
-						</div>
-					</div>
-
-					<div class="row mb-3">
-						<div class="col-2">
-							<img src="assets/img/comment-1.jpg" alt="comment1" class="img-fluid review-img">
-						</div>
-						<div class="col-10">
-							<div class="row align-items-center">
-								<div class="col-4">
-									<h4 class="review-name">William Smith</h4>
-								</div>
-								<div class="col-4">
-									<h5 class="review-day">Dec 7, 2025</h5>
-								</div>
-								<div class="col-4">
-									<ul class="review-stars">
-										<li><i class="ri-star-fill"></i></li>
-										<li><i class="ri-star-fill"></i></li>
-										<li><i class="ri-star-fill"></i></li>
-										<li><i class="ri-star-fill"></i></li>
-										<li><i class="ri-star-fill"></i></li>
-									</ul>
-								</div>
-							</div>
-
-							<div class="row mb-5">
-								<div class="col-12">
-									<p class="review-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit.
-										Libero voluptas tenetur, dolore deserunt expedita ullam.</p>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="col-lg-6 col-12 comment">
-					<div class="row mb-4">
-						<div class="col-12">
-							<h3 class="review-title">Leave a review</h3>
-						</div>
-					</div>
-
-					<div class="row mb-3">
-						<div class="col-12">
-							<textarea name="review" id="review" placeholder="Write a review"></textarea>
-						</div>
-					</div>
-
-					<div class="row mb-3">
-						<div class="col-12">
-							<input type="text" placeholder="Full name">
-						</div>
-					</div>
-
-					<div class="row mb-3">
-						<div class="col-12">
-							<input type="email" placeholder="Email Address">
-						</div>
-					</div>
-
-					<div class="row mb-4">
-						<div class="col-12 d-flex align-items-center">
-							<span class="select-rating mr-3">Select Rating:</span>
-							<ul class="review-stars m-0">
-								<li><i class="ri-star-line"></i></li>
-								<li><i class="ri-star-line"></i></li>
-								<li><i class="ri-star-line"></i></li>
-								<li><i class="ri-star-line"></i></li>
-								<li><i class="ri-star-line"></i></li>
-							</ul>
-						</div>
-					</div>
-
-					<div class="row">
-						<div class="col-12">
-							<a href="#" class="button review-button">Post Review</a>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</section>
-
-	<footer class="footer py-5">
-		<div class="container">
-			<div class="row">
-
-				<div class="col-md-4">
-					<h5 class="text-uppercase mb-3 text-orange">Giới Thiệu</h5>
-					<ul class="list-unstyled">
-						<li><a href="#">Về Chúng Tôi</a></li>
-						<li><a href="#">Sản phẩm</a></li>
-						<li><a href="#">Khuyến mãi</a></li>
-						<li><a href="#">Cửa hàng</a></li>
-						<li><a href="#">Tuyển dụng</a></li>
-					</ul>
-					<h5 class="text-uppercase mt-4 mb-3 text-orange">Điều Khoản</h5>
-					<ul class="list-unstyled">
-						<li><a href="#">Về Chúng Tôi</a></li>
-						<li><a href="#">Chính sách bảo mật thông tin</a></li>
-						<li><a href="#">Hướng dẫn xuất hóa đơn GTGT</a></li>
-					</ul>
-				</div>
-
-				<div class="col-md-4">
-					<h5 class="mb-4 text-orange">© 2025 THE VAGM SHOP</h5>
-
-					<div class="mb-4">
-						<span class="text-orange">VPGG:</span> Tầng 6, 280 An Dương Vương, Phường 4, Quận 5, TP. Hồ Chí
-						Minh
-					</div>
-
-					<div class="mb-4">
-						<span class="text-orange">Đặt hàng:</span> 1800 3636
-						<br>
-						<span class="text-orange">Email:</span> the.vagm@gmail.com
-					</div>
-				</div>
-
-				<div class="col-md-4">
-					<h2 class="mb-4">THE VAGM SHOP</h2>
-					<h5 class="text-orange mb-4">
-						DOWNLOAD APP
-						<br>
-						THE VAGM SHOP APP
-					</h5>
-					<img src="assets/images/ma_qr.png" alt="ma_qr" class="mb-4">
-					<h5 class="mb-2 text-orange">FOLLOW US</h5>
-					<div class="d-flex align-items-center mb-4">
-						<div class="col-2 p-0">
-							<a href="#" class="social-icons">
-								<i class="ri-facebook-circle-fill"></i>
-							</a>
-						</div>
-
-						<div class="col-2 p-0">
-							<a href="#" class="social-icons">
-								<i class="ri-youtube-fill"></i>
-							</a>
-						</div>
-
-						<div class="col-2 p-0">
-							<a href="#" class="social-icons">
-								<i class="ri-instagram-fill"></i>
-							</a>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</footer>
+            <div class="col-2 p-0">
+              <a href="#" class="social-icons">
+                <i class="ri-instagram-fill"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
 
 
 
-	<!-- MAIN JS -->
-	<script src="assets/js/main.js"></script>
-	<!-- Cart JS -->
-	<script src="assets/js/cart.js"></script>
-	<!-- Home js -->
-	<script src="assets/js/home.js"></script>
+
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"></script>
+
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js"></script>
+  <!-- Product-detail JS -->
+  <script src="assets/js/product-detail.js"></script>
+  <!-- Cart JS -->
+  <script src="assets/js/cart.js"></script>
+  <!-- Home js -->
+  <script src="assets/js/main.js"></script>
 </body>
 
 </html>
