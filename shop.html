@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Our Products</title>
+  <title>Sản phẩm</title>
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
   <link href="https://cdn.jsdelivr.net/npm/remixicon@4.7.0/fonts/remixicon.css" rel="stylesheet" />
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css" />
@@ -88,379 +88,222 @@
   </div>
   <!-- End Breadcrumb -->
 
-  <section class="shop-filter">
-    <div class="container filter">
-      <div class="row justify-content-between align-items-center">
-        <div class="col-auto d-flex align-items-center filter-left">
-          <a class="button filter-button">
-            <i class="ri-filter-fill"></i>
-            <span>filter</span>
-          </a>
-          <span class="filter-results">34 results</span>
-        </div>
-
-        <div class="col-auto d-flex align-items-center filter-right">
-          <span>Sort by:</span>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section class="product">
+  <section class="pt-5 shop-content pb-5">
     <div class="container">
-      <div class="row mb-5">
-        <div class="col-lg-4 col-6 product-card">
-          <div class="product-header">
-            <img src="assets/images/sanpham-1.jpeg" alt="" class="product-img">
-
-            <div class="product-content">
-              <div class="product-top">
-                <ul class="product-stars">
-                  <li><i class="ri-star-fill"></i></li>
-                  <li><i class="ri-star-fill"></i></li>
-                  <li><i class="ri-star-fill"></i></li>
-                  <li><i class="ri-star-fill"></i></li>
-                  <li><i class="ri-star-fill"></i></li>
-                  <li class="product-rating">5.0</li>
-                </ul>
-              </div>
-
-              <div class="product-size">
-                <div>
-                  <input type="radio" name="size-p1" class="product-size-input" id="xs-p1" checked>
-                  <label for="xs-p1" class="product-size-label">xs</label>
-                </div>
-                <div>
-                  <input type="radio" name="size-p1" class="product-size-input" id="s-p1">
-                  <label for="s-p1" class="product-size-label">s</label>
-                </div>
-                <div>
-                  <input type="radio" name="size-p1" class="product-size-input" id="m-p1">
-                  <label for="m-p1" class="product-size-label">m</label>
-                </div>
-                <div>
-                  <input type="radio" name="size-p1" class="product-size-input" id="l-p1">
-                  <label for="l-p1" class="product-size-label">l</label>
-                </div>
-                <div>
-                  <input type="radio" name="size-p1" class="product-size-input" id="xl-p1">
-                  <label for="xl-p1" class="product-size-label">xl</label>
-                </div>
-              </div>
-
-              <button class="button product-button w-100"
-                onclick="addToCart(1, 'Váy yếm cổ bèo', 400000, 'assets/images/sanpham-1.jpeg')">
-                Add to Cart
-              </button>
-            </div>
-          </div>
-          <div class="product-bottom">
-            <div>
-              <h3 class="product-title">
-                <a href="details-1.html">Váy yếm cổ bèo</a>
-              </h3>
-              <span class="product-price">400.000 vnđ</span>
-            </div>
-            <a href="#" class="product-wishlist">
-              <i class="ri-heart-line"></i>
-            </a>
-          </div>
-        </div>
-
-        <div class="col-lg-4 col-6 product-card">
-          <div class="product-header">
-            <img src="assets/images/sanpham-2.jpeg" alt="" class="product-img">
-
-            <div class="product-content">
-              <div class="product-top">
-                <ul class="product-stars">
-                  <li><i class="ri-star-fill"></i></li>
-                  <li><i class="ri-star-fill"></i></li>
-                  <li><i class="ri-star-fill"></i></li>
-                  <li><i class="ri-star-fill"></i></li>
-                  <li><i class="ri-star-fill"></i></li>
-                  <li class="product-rating">5.0</li>
-                </ul>
-              </div>
-
-              <div class="product-size">
-                <div>
-                  <input type="radio" name="size-p2" class="product-size-input" id="xs-p2" checked>
-                  <label for="xs-p2" class="product-size-label">xs</label>
-                </div>
-                <div>
-                  <input type="radio" name="size-p2" class="product-size-input" id="s-p2">
-                  <label for="s-p2" class="product-size-label">s</label>
-                </div>
-                <div>
-                  <input type="radio" name="size-p2" class="product-size-input" id="m-p2">
-                  <label for="m-p2" class="product-size-label">m</label>
-                </div>
-                <div>
-                  <input type="radio" name="size-p2" class="product-size-input" id="l-p2">
-                  <label for="l-p2" class="product-size-label">l</label>
-                </div>
-                <div>
-                  <input type="radio" name="size-p2" class="product-size-input" id="xl-p2">
-                  <label for="xl-p2" class="product-size-label">xl</label>
-                </div>
-              </div>
-
-              <button class="button product-button w-100"
-                onclick="addToCart(2, 'Váy dự tiệc', 350000, 'assets/images/sanpham-2.jpeg')">
-                Add to Cart
-              </button>
-            </div>
-          </div>
-          <div class="product-bottom">
-            <div>
-              <h3 class="product-title">
-                <a href="details-2.html">Váy dự tiệc</a>
-              </h3>
-              <span class="product-price">350.000 vnđ</span>
-            </div>
-            <a href="#" class="product-wishlist">
-              <i class="ri-heart-line"></i>
-            </a>
-          </div>
-        </div>
-
-        <div class="col-lg-4 col-6 product-card">
-          <div class="product-header">
-            <img src="assets/images/sanpham-3.png" alt="" class="product-img">
-
-            <div class="product-content">
-              <div class="product-top">
-                <ul class="product-stars">
-                  <li><i class="ri-star-fill"></i></li>
-                  <li><i class="ri-star-fill"></i></li>
-                  <li><i class="ri-star-fill"></i></li>
-                  <li><i class="ri-star-fill"></i></li>
-                  <li><i class="ri-star-fill"></i></li>
-                  <li class="product-rating">5.0</li>
-                </ul>
-              </div>
-
-              <div class="product-size">
-                <div>
-                  <input type="radio" name="size-p3" class="product-size-input" id="xs-p3" checked>
-                  <label for="xs-p3" class="product-size-label">xs</label>
-                </div>
-                <div>
-                  <input type="radio" name="size-p3" class="product-size-input" id="s-p3">
-                  <label for="s-p3" class="product-size-label">s</label>
-                </div>
-                <div>
-                  <input type="radio" name="size-p3" class="product-size-input" id="m-p3">
-                  <label for="m-p3" class="product-size-label">m</label>
-                </div>
-                <div>
-                  <input type="radio" name="size-p3" class="product-size-input" id="l-p3">
-                  <label for="l-p3" class="product-size-label">l</label>
-                </div>
-                <div>
-                  <input type="radio" name="size-p3" class="product-size-input" id="xl-p3">
-                  <label for="xl-p3" class="product-size-label">xl</label>
-                </div>
-              </div>
-
-              <button class="button product-button w-100"
-                onclick="addToCart(3, 'Quần short jean nữ', 180000, 'assets/images/sanpham-3.png')">
-                Add to Cart
-              </button>
-            </div>
-          </div>
-          <div class="product-bottom">
-            <div>
-              <h3 class="product-title">
-                <a href="details-3.html">Quần short jean nữ</a>
-              </h3>
-              <span class="product-price">180.000 vnđ</span>
-            </div>
-            <a href="#" class="product-wishlist">
-              <i class="ri-heart-line"></i>
-            </a>
-          </div>
-        </div>
-
-      </div>
-
       <div class="row">
-        <div class="col-lg-4 col-6 product-card">
-          <div class="product-header">
-            <img src="assets/images/sanpham-4.jpg" alt="" class="product-img">
 
-            <div class="product-content">
-              <div class="product-top">
-                <ul class="product-stars">
-                  <li><i class="ri-star-fill"></i></li>
-                  <li><i class="ri-star-fill"></i></li>
-                  <li><i class="ri-star-fill"></i></li>
-                  <li><i class="ri-star-fill"></i></li>
-                  <li><i class="ri-star-fill"></i></li>
-                  <li class="product-rating">5.0</li>
+        <div class="col-lg-3 col-md-4 d-none d-md-block">
+          <div class="sidebar-filter">
+            <h5 class="font-weight-bold mb-4 text-uppercase">Bộ lọc</h5>
+
+            <div class="filter-group mb-3 border-bottom pb-3">
+              <a href="#collapseType" data-toggle="collapse"
+                class="d-flex justify-content-between align-items-center text-dark font-weight-bold text-decoration-none">
+                Loại Sản Phẩm <i class="ri-add-line"></i>
+              </a>
+              <div class="collapse show" id="collapseType">
+                <ul class="list-unstyled mt-2 pl-2 small">
+                  <li class="mb-2"><a href="#" class="text-secondary">Giày Chạy Bộ (12)</a></li>
+                  <li class="mb-2"><a href="#" class="text-secondary">Quần Áo Thể thao(6)</a></li>
+                  <li class="mb-2"><a href="#" class="text-secondary">Phụ Kiện (5)</a></li>
                 </ul>
               </div>
+            </div>
 
-              <div class="product-size">
-                <div>
-                  <input type="radio" name="size-p4" class="product-size-input" id="xs-p4" checked>
-                  <label for="xs-p4" class="product-size-label">xs</label>
-                </div>
-                <div>
-                  <input type="radio" name="size-p4" class="product-size-input" id="s-p4">
-                  <label for="s-p4" class="product-size-label">s</label>
-                </div>
-                <div>
-                  <input type="radio" name="size-p4" class="product-size-input" id="m-p4">
-                  <label for="m-p4" class="product-size-label">m</label>
-                </div>
-                <div>
-                  <input type="radio" name="size-p4" class="product-size-input" id="l-p4">
-                  <label for="l-p4" class="product-size-label">l</label>
-                </div>
-                <div>
-                  <input type="radio" name="size-p4" class="product-size-input" id="xl-p4">
-                  <label for="xl-p4" class="product-size-label">xl</label>
-                </div>
+            <div class="filter-group mb-3 border-bottom pb-3">
+              <a href="#collapseLine" data-toggle="collapse"
+                class="d-flex justify-content-between align-items-center text-dark font-weight-bold text-decoration-none">
+                Dòng Sản Phẩm <i class="ri-add-line"></i>
+              </a>
+              <div class="collapse" id="collapseLine">
+                <ul class="list-unstyled mt-2 pl-2 small">
+                  <li class="mb-2"><a href="#" class="text-secondary">Chạy bộ (13)</a></li>
+                  <li class="mb-2"><a href="#" class="text-secondary">Bóng rổ (5)</a></li>
+                </ul>
               </div>
+            </div>
 
-              <button class="button product-button w-100"
-                onclick="addToCart(4, 'Quần ống rộng', 169000, 'assets/images/sanpham-4.jpg')">
-                Add to Cart
-              </button>
+            <div class="filter-group mb-3 border-bottom pb-3">
+              <a href="#collapseGender" data-toggle="collapse"
+                class="d-flex justify-content-between align-items-center text-dark font-weight-bold text-decoration-none">
+                Giới Tính <i class="ri-add-line"></i>
+              </a>
+              <div class="collapse" id="collapseGender">
+                <ul class="list-unstyled mt-2 pl-2 small">
+                  <li class="mb-2"><a href="#" class="text-secondary">Nam</a></li>
+                  <li class="mb-2"><a href="#" class="text-secondary">Nữ</a></li>
+                  <li class="mb-2"><a href="#" class="text-secondary">Unisex</a></li>
+                </ul>
+              </div>
             </div>
-          </div>
-          <div class="product-bottom">
-            <div>
-              <h3 class="product-title">
-                <a href="details-4.html">Quần ống rộng</a>
-              </h3>
-              <span class="product-price">169.000 vnđ</span>
-            </div>
-            <a href="#" class="product-wishlist">
-              <i class="ri-heart-line"></i>
-            </a>
           </div>
         </div>
+        <div class="col-lg-9 col-md-8">
 
-        <div class="col-lg-4 col-6 product-card">
-          <div class="product-header">
-            <img src="assets/images/sanpham-5.jpeg" alt="" class="product-img">
+          <div class="shop-banner mb-4">
+            <img src="assets/images/banner-product.jpeg" alt="Banner Chạy Bộ" class="img-fluid w-100"
+              style="min-height: 200px; object-fit: cover; background-color: #eee;">
+          </div>
 
-            <div class="product-content">
-              <div class="product-top">
-                <ul class="product-stars">
-                  <li><i class="ri-star-fill"></i></li>
-                  <li><i class="ri-star-fill"></i></li>
-                  <li><i class="ri-star-fill"></i></li>
-                  <li><i class="ri-star-fill"></i></li>
-                  <li><i class="ri-star-fill"></i></li>
-                  <li class="product-rating">5.0</li>
+          <div class="d-flex justify-content-between align-items-center mb-4">
+            <h2 class="font-weight-bold text-uppercase mb-0 h3">Quần Áo</h2>
+            <div class="d-flex align-items-center">
+              <span class="mr-2 small text-muted">Sắp xếp theo:</span>
+              <select class="custom-select custom-select-sm" style="width: auto; border-radius: 0;">
+                <option selected>Mới nhất</option>
+                <option value="1">Giá tăng dần</option>
+                <option value="2">Giá giảm dần</option>
+                <option value="3">Tên A-Z</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="row">
+
+            <div class="col-6 col-lg-3 mb-4">
+              <div class="product-item">
+                <div class="product-thumb position-relative mb-2">
+                  <span class="badge badge-danger position-absolute rounded-0"
+                    style="top: 0; left: 0; padding: 5px 10px;">-10%</span>
+                  <a href="details-1.html">
+                    <img src="assets/images/product-1/product-1-1.jpg" class="img-fluid w-100" alt="Sản phẩm 1">
+                  </a>
+                </div>
+                <div class="product-info">
+                  <h6 class="product-name mb-1">
+                    <a href="details-1.html" class="text-dark text-decoration-none" style="font-size: 14px;">Áo lông vũ Nam AYMV151-1V</a>
+                  </h6>
+                  <div class="price-box">
+                    <span class="text-danger font-weight-bold">2,907,164₫</span>
+                    <del class="text-muted small ml-1">3,230,182₫</del>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-6 col-lg-3 mb-4">
+              <div class="product-item">
+                <div class="product-thumb position-relative mb-2">
+                  <span class="badge badge-danger position-absolute rounded-0"
+                    style="top: 0; left: 0; padding: 5px 10px;">-10%</span>
+                  <a href="details-2.html">
+                    <img src="assets/images/product-2/product-2-1.jpg" class="img-fluid w-100" alt="Sản phẩm 2">
+                  </a>
+                </div>
+                <div class="product-info">
+                  <h6 class="product-name mb-1">
+                    <a href="details-2.html" class="text-dark text-decoration-none" style="font-size: 14px;">Áo lông vũ Nam AMRV079-2V</a>
+                  </h6>
+                  <div class="price-box">
+                    <span class="text-danger font-weight-bold">3,172,254₫</span>
+                    <del class="text-muted small ml-1">3,524,727₫</del>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-6 col-lg-3 mb-4">
+              <div class="product-item">
+                <div class="product-thumb position-relative mb-2">
+                  <span class="badge badge-danger position-absolute rounded-0"
+                    style="top: 0; left: 0; padding: 5px 10px;">-30%</span>
+                  <a href="details-3.html">
+                    <img src="assets/images/product-3/product-3-1.jpg" class="img-fluid w-100" alt="Sản phẩm 3">
+                  </a>
+                </div>
+                <div class="product-info">
+                  <h6 class="product-name mb-1">
+                    <a href="details-3.html" class="text-dark text-decoration-none" style="font-size: 14px;">Áo gió có mũ Nam AFDV125-3V</a>
+                  </h6>
+                  <div class="price-box">
+                    <span class="text-danger font-weight-bold">2,054,945₫</span>
+                    <del class="text-muted small ml-1">2,935,636₫</del>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-6 col-lg-3 mb-4">
+              <div class="product-item">
+                <div class="product-thumb position-relative mb-2">
+                  <span class="badge badge-danger position-absolute rounded-0"
+                    style="top: 0; left: 0; padding: 5px 10px;">-10%</span>
+                  <a href="details-4.html">
+                    <img src="assets/images/product-4/product-4-1.jpg" class="img-fluid w-100" alt="Sản phẩm 4">
+                  </a>
+                </div>
+                <div class="product-info">
+                  <h6 class="product-name mb-1">
+                    <a href="details-4.html" class="text-dark text-decoration-none" style="font-size: 14px;">Áo lông vũ Nữ AYMV234-1V</a>
+                  </h6>
+                  <div class="price-box">
+                    <span class="text-danger font-weight-bold">2,907,164₫</span>
+                    <del class="text-muted small ml-1">3,230,182₫</del>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-6 col-lg-3 mb-4">
+              <div class="product-item">
+                <div class="product-thumb position-relative mb-2">
+                  <span class="badge badge-danger position-absolute rounded-0"
+                    style="top: 0; left: 0; padding: 5px 10px;">-10%</span>
+                  <a href="details-5.html">
+                    <img src="assets/images/product-5/product-5-1.jpg" class="img-fluid w-100" alt="Sản phẩm 5">
+                  </a>
+                </div>
+                <div class="product-info">
+                  <h6 class="product-name mb-1">
+                    <a href="details-5.html" class="text-dark text-decoration-none" style="font-size: 14px;">Quần dài golf Nam AYKV417-1V</a>
+                  </h6>
+                  <div class="price-box">
+                    <span class="text-danger font-weight-bold">2,023,528₫</span>
+                    <del class="text-muted small ml-1">2,248,364₫</del>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-6 col-lg-3 mb-4">
+              <div class="product-item">
+                <div class="product-thumb position-relative mb-2">
+                  <span class="badge badge-danger position-absolute rounded-0"
+                    style="top: 0; left: 0; padding: 5px 10px;">-10%</span>
+                  <a href="details-6.html">
+                    <img src="assets/images/product-6/product-6-1.jpg" class="img-fluid w-100" alt="Sản phẩm 6">
+                  </a>
+                </div>
+                <div class="product-info">
+                  <h6 class="product-name mb-1">
+                    <a href="details-6.html" class="text-dark text-decoration-none" style="font-size: 14px;">Quần nỉ ống suông Nữ AKLV840-3V</a>
+                  </h6>
+                  <div class="price-box">
+                    <span class="text-danger font-weight-bold">1,493,346₫</span>
+                    <del class="text-muted small ml-1">1,659,273₫</del>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+          <div class="row mt-4">
+            <div class="col-12 text-center">
+              <nav aria-label="Page navigation">
+                <ul class="pagination justify-content-center">
+                  <li class="page-item active"><a class="page-link border-0 text-dark font-weight-bold" href="#">1</a>
+                  </li>
+                  <li class="page-item"><a class="page-link border-0 text-secondary" href="#">2</a></li>
+                  <li class="page-item"><a class="page-link border-0 text-secondary" href="#">3</a></li>
+                  <li class="page-item"><a class="page-link border-0 text-secondary" href="#">...</a></li>
+                  <li class="page-item"><a class="page-link border-0 text-secondary" href="#">9</a></li>
                 </ul>
-              </div>
-
-              <div class="product-size">
-                <div>
-                  <input type="radio" name="size-p5" class="product-size-input" id="xs-p5" checked>
-                  <label for="xs-p5" class="product-size-label">xs</label>
-                </div>
-                <div>
-                  <input type="radio" name="size-p5" class="product-size-input" id="s-p5">
-                  <label for="s-p5" class="product-size-label">s</label>
-                </div>
-                <div>
-                  <input type="radio" name="size-p5" class="product-size-input" id="m-p5">
-                  <label for="m-p5" class="product-size-label">m</label>
-                </div>
-                <div>
-                  <input type="radio" name="size-p5" class="product-size-input" id="l-p5">
-                  <label for="l-p5" class="product-size-label">l</label>
-                </div>
-                <div>
-                  <input type="radio" name="size-p5" class="product-size-input" id="xl-p5">
-                  <label for="xl-p5" class="product-size-label">xl</label>
-                </div>
-              </div>
-
-              <button class="button product-button w-100"
-                onclick="addToCart(5, 'Áo Thun Nữ Basic', 290000, 'assets/images/sanpham-5.jpeg')">
-                Add to Cart
-              </button>
+              </nav>
             </div>
           </div>
-          <div class="product-bottom">
-            <div>
-              <h3 class="product-title">
-                <a href="details-5.html">Áo Thun Nữ Basic</a>
-              </h3>
-              <span class="product-price">290.000 vnđ</span>
-            </div>
-            <a href="#" class="product-wishlist">
-              <i class="ri-heart-line"></i>
-            </a>
-          </div>
-        </div>
 
-        <div class="col-lg-4 col-6 product-card">
-          <div class="product-header">
-            <img src="assets/images/sanpham-6.jpeg" alt="" class="product-img">
-
-            <div class="product-content">
-              <div class="product-top">
-                <ul class="product-stars">
-                  <li><i class="ri-star-fill"></i></li>
-                  <li><i class="ri-star-fill"></i></li>
-                  <li><i class="ri-star-fill"></i></li>
-                  <li><i class="ri-star-fill"></i></li>
-                  <li><i class="ri-star-fill"></i></li>
-                  <li class="product-rating">5.0</li>
-                </ul>
-              </div>
-
-              <div class="product-size">
-                <div>
-                  <input type="radio" name="size-p6" class="product-size-input" id="xs-p6" checked>
-                  <label for="xs-p6" class="product-size-label">xs</label>
-                </div>
-                <div>
-                  <input type="radio" name="size-p6" class="product-size-input" id="s-p6">
-                  <label for="s-p6" class="product-size-label">s</label>
-                </div>
-                <div>
-                  <input type="radio" name="size-p6" class="product-size-input" id="m-p6">
-                  <label for="m-p6" class="product-size-label">m</label>
-                </div>
-                <div>
-                  <input type="radio" name="size-p6" class="product-size-input" id="l-p6">
-                  <label for="l-p6" class="product-size-label">l</label>
-                </div>
-                <div>
-                  <input type="radio" name="size-p6" class="product-size-input" id="xl-p6">
-                  <label for="xl-p6" class="product-size-label">xl</label>
-                </div>
-              </div>
-
-              <button class="button product-button w-100"
-                onclick="addToCart(6, 'Áo Sơ Mi Nữ Thanh Lịch', 300000, 'assets/images/sanpham-6.jpeg')">
-                Add to Cart
-              </button>
-            </div>
-          </div>
-          <div class="product-bottom">
-            <div>
-              <h3 class="product-title">
-                <a href="details-6.html">Áo Sơ Mi Nữ Thanh Lịch</a>
-              </h3>
-              <span class="product-price">300.000 vnđ</span>
-            </div>
-            <a href="#" class="product-wishlist">
-              <i class="ri-heart-line"></i>
-            </a>
-          </div>
         </div>
       </div>
-
     </div>
   </section>
 
@@ -532,16 +375,15 @@
     </div>
   </footer>
 
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"></script>
 
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
 
-  <!-- Swiper -->
-  <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js"></script>
   <!-- MAIN JS -->
   <script src="assets/js/main.js"></script>
   <!-- Cart JS -->
   <script src="assets/js/cart.js"></script>
-  <!-- Home js -->
-  <script src="assets/js/home.js"></script>
 </body>
 
 </html>

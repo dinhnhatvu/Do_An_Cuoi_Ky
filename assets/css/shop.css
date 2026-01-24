@@ -1,98 +1,40 @@
-/* Gallery Thumbnails */
-.thumb-list img {
-    cursor: pointer;
-    transition: border-color 0.2s;
-    opacity: 0.7;
+/* Sidebar Filter */
+.sidebar-filter a[data-toggle="collapse"] {
+    font-size: 15px;
+    padding: 5px 0;
 }
-.thumb-list img:hover, 
-.thumb-list img.active-thumb {
-    border-color: #000 !important; /* Viền đen khi chọn */
-    opacity: 1;
-    border-width: 2px !important;
+.sidebar-filter a[data-toggle="collapse"]:hover {
+    color: #d9232e !important; /* Màu đỏ khi hover */
 }
-
-/* Custom Size Selector (Biến radio thành ô vuông) */
-.size-option {
-    position: relative;
-    width: 45px;
-    height: 45px;
-}
-
-.size-option input[type="radio"] {
-    position: absolute;
-    opacity: 0;
-    width: 100%;
-    height: 100%;
-    cursor: pointer;
-    z-index: 2;
-}
-
-.size-option label {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border: 1px solid #dee2e6;
-    background: #fff;
-    color: #333;
+.sidebar-filter ul li a {
     font-size: 14px;
     transition: all 0.2s;
-    margin: 0;
-    z-index: 1;
+}
+.sidebar-filter ul li a:hover {
+    color: #d9232e !important;
+    padding-left: 5px;
 }
 
-/* Hiệu ứng khi chọn Size */
-.size-option input[type="radio"]:checked + label {
-    border-color: #000;
-    background-color: #fff; /* Giữ nền trắng */
-    color: #000;
-    font-weight: bold;
-    border-width: 2px;
+/* Product Card - Clean Style */
+.product-item {
+    transition: transform 0.3s;
+}
+.product-item:hover {
+    transform: translateY(-5px); /* Hiệu ứng bay nhẹ khi hover */
+}
+.product-name a:hover {
+    color: #d9232e !important;
+}
+.price-box {
+    font-size: 15px;
 }
 
-/* Hiệu ứng khi hover Size */
-.size-option:hover label {
-    border-color: #999;
+/* Phân trang */
+.page-link {
+    background: transparent;
 }
-
-/* Size hết hàng */
-.size-option label.disabled {
-    background-color: #f8f9fa;
-    color: #ccc;
-    text-decoration: line-through;
-    cursor: not-allowed;
-    border-color: #eee;
-}
-
-/* Tùy chỉnh Tab */
-.nav-tabs .nav-link:hover {
-    border-color: transparent;
-    color: #000;
-}
-
-.desc {
-    font-weight: 500;
-}
-
-.img-desc {
-    max-width: 480px;
-    height: auto;
-}
-
-@media (max-width: 767.98px) {
-    .img-desc {
-        max-width: 240px;
-    }
-}
-
-.border-style {
-    border: 2px solid #000!important;
-}
-
-.list-styled {
-    list-style-type: disc !important;
+.page-item.active .page-link {
+    background: transparent;
+    color: #000 !important;
+    border-bottom: 2px solid #000;
 }
