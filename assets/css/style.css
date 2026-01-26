@@ -63,7 +63,7 @@
 
 .header .topbar-bar-container .navbar-button:hover {
     background: var(--first-color);
-    color: black;
+    color: white;
 }
 
 .header .navbar-container {

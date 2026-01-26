@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Giỏ hàng</title>
+    <title>Your Shopping cart</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
     <link href="https://cdn.jsdelivr.net/npm/remixicon@4.7.0/fonts/remixicon.css" rel="stylesheet" />
     <link rel="stylesheet" href="assets/css/base.css">
@@ -20,7 +20,7 @@
         <div class="row">
           <div class="col-12">
             <div class="topbar-bar-container">
-              <a href="index.html">
+              <a href="index-en.html">
                 <h2 class="logo">THE VAGM SHOP</h2>
               </a>
 
@@ -29,11 +29,11 @@
               </button>
 
               <div class="navbar-buttons">
-                <a target="_blank" href="acount.html" class="navbar-button">
+                <a target="_blank" href="acount-en.html" class="navbar-button">
                   <i class="ri-user-line"></i>
                 </a>
 
-                <a href="cart.html" class="navbar-button">
+                <a href="cart-en.html" class="navbar-button">
                   <i class="ri-shopping-cart-line"></i>
                 </a>
               </div>
@@ -46,27 +46,27 @@
             <nav class="navbar-container" id="fixed-menu">
               <ul class="navbar-list">
                 <li class="navbar-item">
-                  <a href="index.html" class="navbar-link">TRANG CHỦ</a>
+                  <a href="index-en.html" class="navbar-link">HOME</a>
                 </li>
                 <li class="navbar-item">
-                  <a href="shop.html" class="navbar-link">SẢN PHẨM</a>
+                  <a href="shop-en.html" class="navbar-link">COLLECTIONS</a>
                 </li>
                 <li class="navbar-item">
-                  <a href="#footer-section" class="navbar-link">LIÊN HỆ</a>
+                  <a href="#footer-section" class="navbar-link">CONTACT</a>
                 </li>
                 <li class="navbar-item d-md-none">
-                  <a target="_blank" href="acount.html" class="navbar-link">TÀI KHOẢN</a>
+                  <a target="_blank" href="acount-en.html" class="navbar-link">MY ACCOUNT</a>
                 </li>
                 <li class="navbar-item d-md-none">
-                  <a href="cart.html" class="navbar-link">GIỎ HÀNG</a>
+                  <a href="cart-en.html" class="navbar-link">SHOPPING CART</a>
                 </li>
                 <li class="navbar-item">
-                  <a target="_blank" href="fish_tank.html" class="navbar-link">HỒ CÁ</a>
+                  <a target="_blank" href="fish_tank.html" class="navbar-link">AQUARIUM</a>
                 </li>
               </ul>
               <div class="navbar-item navbar-contact-mobile">
-                <a href="#"><img src="assets/images/vi.png" alt="vn"></a>
-                <a href="cart-en.html"><img src="assets/images/en.png" alt="en"></a>
+                <a href="cart.html"><img src="assets/images/vi.png" alt="vn"></a>
+                <a href="#"><img src="assets/images/en.png" alt="en"></a>
               </div>
             </nav>
           </div>
@@ -80,8 +80,8 @@
     <div class="container">
       <nav aria-label="breadcrumb">
         <ol class="breadcrumb mb-0">
-          <li class="breadcrumb-item"><a href="#">Trang chủ</a></li>
-          <li class="breadcrumb-item active" aria-current="page">Giỏ hàng</li>
+          <li class="breadcrumb-item"><a href="#">Home</a></li>
+          <li class="breadcrumb-item active" aria-current="page">Shopping cart</li>
         </ol>
       </nav>
     </div>
@@ -90,44 +90,44 @@
   <!-- CART ITEM DETAILS -->
   <div class="container py-5">
     <div class="row cart-header d-none d-md-flex text-center">
-      <div class="col-md-6 text-left" style="text-align: left;">Sản phẩm</div>
-      <div class="col-md-2">Đơn giá</div>
-      <div class="col-md-2">Số lượng</div>
-      <div class="col-md-2">Thành tiền</div>
+      <div class="col-md-6 text-left" style="text-align: left;">Product</div>
+      <div class="col-md-2">Unit Price</div>
+      <div class="col-md-2">Quantity</div>
+      <div class="col-md-2">Total amount</div>
     </div>
 
     <div id="cart-items-container">
     </div>
 
     <div class="continue-shopping-block">
-      <a href="shop.html" style="color: #000; text-decoration: none;">TIẾP TỤC MUA SẮM</a>
+      <a href="shop-en.html" style="color: #000; text-decoration: none;">CONTINUE SHOPPING</a>
     </div>
 
     <div class="row">
       <div class="col-md-6 mb-4">
-        <label class="mb-2 font-weight-bold">Ghi chú đơn hàng</label>
-        <textarea class="form-control" rows="4" placeholder="Ghi chú thêm về đơn hàng..."
+        <label class="mb-2 font-weight-bold">Order notes</label>
+        <textarea class="form-control" rows="4" placeholder="Order notes..."
           style="border-radius: 0;"></textarea>
 
         <div class="form-check mt-3 pl-0">
           <input class="form-check-input" type="checkbox" id="invoice">
           <label class="form-check-label font-weight-bold" for="invoice">
-            Xuất hóa đơn công ty <i class="ri-file-list-3-line"></i>
+            Issue company invoices <i class="ri-file-list-3-line"></i>
           </label>
         </div>
       </div>
 
       <div class="col-md-6 text-right" style="text-align: right;">
         <div class="mb-2">
-          <span style="font-size: 16px;">Thành tiền</span>
+          <span style="font-size: 16px;">Total amount</span>
           <span class="cart-footer-total ml-3" id="cart-total">0₫</span>
         </div>
         <p class="text-muted small mb-4">
-          (Đã bao gồm VAT nếu có)
+          (VAT included, if applicable)
         </p>
 
         <button onclick="showQR()" class="btn-checkout-black">
-          Thanh toán
+          Pay
         </button>
       </div>
     </div>
@@ -156,19 +156,19 @@
       <div class="row">
 
         <div class="col-md-4">
-          <h5 class="text-uppercase mb-3 text-orange">Giới Thiệu</h5>
+          <h5 class="text-uppercase mb-3 text-orange">ABOUT US</h5>
           <ul class="list-unstyled">
-            <li><a href="#">Về Chúng Tôi</a></li>
-            <li><a href="#">Sản phẩm</a></li>
-            <li><a href="#">Khuyến mãi</a></li>
-            <li><a href="#">Cửa hàng</a></li>
-            <li><a href="#">Tuyển dụng</a></li>
+            <li><a href="#">Our Story</a></li>
+            <li><a href="#">Collections</a></li>
+            <li><a href="#">Special Offers</a></li>
+            <li><a href="#">Store Location</a></li>
+            <li><a href="#">Careers</a></li>
           </ul>
-          <h5 class="text-uppercase mt-4 mb-3 text-orange">Điều Khoản</h5>
+          <h5 class="text-uppercase mt-4 mb-3 text-orange">POLICIES</h5>
           <ul class="list-unstyled">
-            <li><a href="#">Về Chúng Tôi</a></li>
-            <li><a href="#">Chính sách bảo mật thông tin</a></li>
-            <li><a href="#">Hướng dẫn xuất hóa đơn GTGT</a></li>
+            <li><a href="#">Terms of Service</a></li>
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">VAT Invoice Guide</a></li>
           </ul>
         </div>
 
@@ -176,11 +176,11 @@
           <h5 class="mb-4 text-orange">© 2025 THE VAGM SHOP</h5>
 
           <div class="mb-4">
-            <span class="text-orange">VPGG:</span> Tầng 6, 280 An Dương Vương, Phường 4, Quận 5, TP. Hồ Chí Minh
+            <span class="text-orange">Headquarters:</span> Floor 6, 280 An Duong Vuong, Ward 4, District 5, Ho Chi Minh City
           </div>
 
           <div class="mb-4">
-            <span class="text-orange">Đặt hàng:</span> 1800 3636
+            <span class="text-orange">Order Desk:</span> 1800 3636
             <br>
             <span class="text-orange">Email:</span> the.vagm@gmail.com
           </div>
@@ -223,7 +223,7 @@
   <!-- MAIN JS -->
   <script src="assets/js/main.js"></script>
   <!-- Cart JS -->
-  <script src="assets/js/cart.js"></script>
+  <script src="assets/js/cart-en.js"></script>
   <!-- Home js -->
   <script src="assets/js/home.js"></script>
 </body>
