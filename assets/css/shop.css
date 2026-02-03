@@ -4,7 +4,7 @@
     padding: 5px 0;
 }
 .sidebar-filter a[data-toggle="collapse"]:hover {
-    color: #d9232e !important; /* Màu đỏ khi hover */
+    color: #d9232e !important;
 }
 .sidebar-filter ul li a {
     font-size: 14px;
@@ -14,13 +14,13 @@
     color: #d9232e !important;
     padding-left: 5px;
 }
+/* End Sidebar Filter */
 
-/* Product Card - Clean Style */
 .product-item {
     transition: transform 0.3s;
 }
 .product-item:hover {
-    transform: translateY(-5px); /* Hiệu ứng bay nhẹ khi hover */
+    transform: translateY(-5px); 
 }
 .product-name a:hover {
     color: #d9232e !important;
@@ -29,7 +29,6 @@
     font-size: 15px;
 }
 
-/* Phân trang */
 .page-link {
     background: transparent;
 }

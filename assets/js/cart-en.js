@@ -1,4 +1,3 @@
-// 1. Hàm hiển thị giỏ hàng
 function renderCart() {
     let cart = JSON.parse(localStorage.getItem("shoppingCart")) || [];
     const container = document.getElementById("cart-items-container");
@@ -17,7 +16,6 @@ function renderCart() {
         let itemTotal = item.price * item.quantity;
         subtotal += itemTotal;
 
-        // Định dạng tiền tệ
         let priceFormatted = item.price.toLocaleString('vi-VN');
         let totalFormatted = itemTotal.toLocaleString('vi-VN');
 
@@ -63,25 +61,21 @@ function renderCart() {
     totalEl.innerText = subtotal.toLocaleString('vi-VN') + "₫";
 }
 
-// 2. Hàm cập nhật số lượng (Tăng/Giảm)
 function updateQuantity(index, change) {
   let cart = JSON.parse(localStorage.getItem("shoppingCart")) || [];
 
   if (cart[index]) {
     cart[index].quantity += change;
 
-    // Nếu số lượng giảm về 0 thì xóa luôn
     if (cart[index].quantity < 1) {
       cart.splice(index, 1);
     }
   }
 
-  // Lưu lại và vẽ lại giao diện
   localStorage.setItem("shoppingCart", JSON.stringify(cart));
   renderCart();
 }
 
-// 3. Hàm xóa sản phẩm
 function removeItem(index) {
   let cart = JSON.parse(localStorage.getItem("shoppingCart")) || [];
   cart.splice(index, 1);
@@ -89,17 +83,13 @@ function removeItem(index) {
   renderCart();
 }
 
-// Chạy hàm render khi trang web tải xong
 document.addEventListener("DOMContentLoaded", renderCart);
 
 function showQR() {
-    // 1. Lấy số tiền hiện tại từ giỏ hàng
     const total = document.getElementById('cart-total').innerText;
     
-    // 2. Tạo link QR (Sử dụng API miễn phí, bạn có thể thay bằng link ảnh của bạn)
     const qrUrl = "assets/images/ma_qr_momo.jpg";
     
-    // 3. Cập nhật thông tin và hiển thị
     document.getElementById('qr-image').src = qrUrl;
     document.getElementById('qr-amount').innerText = total;
     document.getElementById('qr-overlay').style.display = 'flex';

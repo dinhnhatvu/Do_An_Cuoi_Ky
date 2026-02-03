@@ -1,4 +1,3 @@
-/* Gallery Thumbnails */
 .thumb-list img {
     cursor: pointer;
     transition: border-color 0.2s;
@@ -6,12 +5,11 @@
 }
 .thumb-list img:hover, 
 .thumb-list img.active-thumb {
-    border-color: #000 !important; /* Viền đen khi chọn */
+    border-color: #000 !important; 
     opacity: 1;
     border-width: 2px !important;
 }
 
-/* Custom Size Selector (Biến radio thành ô vuông) */
 .size-option {
     position: relative;
     width: 45px;
@@ -45,21 +43,19 @@
     z-index: 1;
 }
 
-/* Hiệu ứng khi chọn Size */
 .size-option input[type="radio"]:checked + label {
     border-color: #000;
-    background-color: #fff; /* Giữ nền trắng */
+    background-color: #fff;
     color: #000;
     font-weight: bold;
     border-width: 2px;
 }
 
-/* Hiệu ứng khi hover Size */
+
 .size-option:hover label {
     border-color: #999;
 }
 
-/* Size hết hàng */
 .size-option label.disabled {
     background-color: #f8f9fa;
     color: #ccc;
@@ -68,7 +64,6 @@
     border-color: #eee;
 }
 
-/* Tùy chỉnh Tab */
 .nav-tabs .nav-link:hover {
     border-color: transparent;
     color: #000;
